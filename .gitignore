@@ -1,0 +1,35 @@
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de entorno
+.env
+*.log
+
+# Compilados y binarios
+*.class
+*.exe
+*.dll
+*.so
+*.jar
+*.apk
+
+# Carpetas de IDEs
+.idea/
+.vscode/
+*.iml
+
+# Archivos temporales
+*.tmp
+*.swp
+
+
+# Python 
+__pycache__/
+*.pyc
+
+# Java 
+target/
+bin/
+
+Agregado archivo .gitignore para limpiar el repositorio
