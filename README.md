@@ -19,9 +19,9 @@ Cada proyecto está pensado para ser reutilizable , con código comentado y docu
 - SQLite 
 - Diseño UI/UX 
 
- Tags:  #DAMS #CFGS #INFORMATICA #MULTIPLATAFORMA 
+ Tags:  #DAMS #CFGS #MULTIPLATAFORMA 
 
 ---
 
 **Autora:** Miriam Mendieta  
-**Contacto:**   
+  
