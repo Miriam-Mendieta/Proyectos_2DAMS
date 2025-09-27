@@ -2,7 +2,7 @@
 
 Este repositorio contiene una colección de proyectos desarrollados durante el segundo año del ciclo de Desarrollo de Aplicaciones Multiplataforma (2DAMS).
 Los ejercicios combinan programación, acceso a datos, SGE, diseño de interfaces...
-Cada proyecto está pensado para ser reutilizable en contextos educativos, con código comentado y documentación clara.
+Cada proyecto está pensado para ser reutilizable , con código comentado y documentación clara.
 
 ## ✨ Objetivos
 
