@@ -11,13 +11,19 @@ Cada proyecto está pensado para ser reutilizable , con código comentado y docu
 
 ## 📂 Contenido
 
-- 
+- Desarrollo de Interfases
+- Sistema de Gratión Empresarial
+- Acceso a Datos
+- Programación Multimedia y  Dispositivos Móviles 
 
 ## 🛠️ Tecnologías
 
 - Git y GitHub
-- SQLite 
-- Diseño UI/UX 
+- Sql y SQLite 
+- Diseño UI/UX
+- Figma
+- Python
+- Docker
 
  Tags:  #DAMS #CFGS #MULTIPLATAFORMA 
 
