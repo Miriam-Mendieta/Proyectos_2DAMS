@@ -6,7 +6,7 @@ Cada proyecto está pensado para ser reutilizable , con código comentado y docu
 
 ## ✨ Objetivos
 
-- Aplicar conceptos  de programación en proyectos reales y ejrcicios realizados en los diferentes módulos.
+- Aplicar conceptos  de programación en proyectos reales y ejercicios realizados en los diferentes módulos.
 - Integrar buenas prácticas de desarrollo y control de versiones
 
 ## 📂 Contenido
