@@ -12,7 +12,7 @@ Cada proyecto está pensado para ser reutilizable , con código comentado y docu
 ## 📂 Contenido
 
 
-- [Desarrollo de Interfacs](https://github.com/Miriam-Mendieta/Proyectos_2DAMS/tree/main/DESARROLLO%20DE%20INTERFACES)
+- [Desarrollo de Interfaces](https://github.com/Miriam-Mendieta/Proyectos_2DAMS/tree/main/DESARROLLO%20DE%20INTERFACES)
 - [Sistema de Gestión Empresarial](Sistema%20de%20Gracion%20Empresarial/)
 - [Acceso a Datos]()
 - [Programación Multimedia y Dispositivos Móviles]()
