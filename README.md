@@ -6,16 +6,16 @@ Cada proyecto está pensado para ser reutilizable , con código comentado y docu
 
 ## ✨ Objetivos
 
-- Aplicar conceptos  de programación en proyectos reales y ejrcicios realizados en los diferentes módulos.
+- Aplicar conceptos  de programación en proyectos reales y ejercicios realizados en los diferentes módulos.
 - Integrar buenas prácticas de desarrollo y control de versiones
 
 ## 📂 Contenido
 
 
-- Desarrollo de Interfases
-- Sistema de Gratión Empresarial
-- Acceso a Datos
-- Programación Multimedia y  Dispositivos Móviles 
+- [Desarrollo de Interfaces](https://github.com/Miriam-Mendieta/Proyectos_2DAMS/tree/main/DESARROLLO%20DE%20INTERFACES)
+- [Sistema de Gestión Empresarial](https://github.com/Miriam-Mendieta/Proyectos_2DAMS/tree/main/SISTEMA%20DE%20GESTI%C3%93N%20EMPRESARIAL)
+- [Acceso a Datos]()
+- [Programación Multimedia y Dispositivos Móviles]()
 
 
 ## 🛠️ Tecnologías
