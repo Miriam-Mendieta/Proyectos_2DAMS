@@ -101,7 +101,7 @@ print()
 # lista inicial 
 mi_lista = ["manzana", "banana", "cereza"]
 
-# se imorime los elementos y su longitug
+# se imprime los elementos y su longitud
 print(f"Lista original: {mi_lista}")
 print(f"Elementos: {len(mi_lista)}") #longitud de la lista
 
