@@ -7,7 +7,7 @@ El objetivo es integrar conocimientos técnicos y pedagógicos aplicados a entor
 
 ## 🧠 Contenidos del Módulo
 
-- 🐍 [Desarrollo con Python](SISTEMA DE GESTIÓN EMPRESARIAL/UD00. -Python 3 bàsic) 
+- 🐍 [Desarrollo con Python](https://github.com/Miriam-Mendieta/Proyectos_2DAMS/tree/main/SISTEMA%20DE%20GESTI%C3%93N%20EMPRESARIAL/UD00.%20-Python%203%20b%C3%A0sic)) 
 - 🐳 Docker  
 - 🧩 Implantación de Odoo  
 - 🛠️ Desarrollo de módulos de Odoo  
