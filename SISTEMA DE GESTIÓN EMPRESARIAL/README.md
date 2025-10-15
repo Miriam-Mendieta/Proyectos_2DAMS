@@ -7,7 +7,7 @@ El objetivo es integrar conocimientos técnicos y pedagógicos aplicados a entor
 
 ## 🧠 Contenidos del Módulo
 
-- 🐍 Desarrollo con Python  
+- 🐍 [Desarrollo con Python](SISTEMA DE GESTIÓN EMPRESARIAL/UD00. -Python 3 bàsic) 
 - 🐳 Docker  
 - 🧩 Implantación de Odoo  
 - 🛠️ Desarrollo de módulos de Odoo  
