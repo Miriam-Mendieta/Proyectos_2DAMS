@@ -27,5 +27,6 @@ El objetivo es integrar conocimientos técnicos y pedagógicos aplicados a entor
 
 
 
-
+<p align="center">
 <img width="417" height="452" alt="Captura de pantalla 2025-10-15 154824" src="https://github.com/user-attachments/assets/311ecc45-2337-4d09-b04d-f04512cd7bd6" />
+</p>
