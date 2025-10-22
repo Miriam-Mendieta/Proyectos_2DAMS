@@ -156,7 +156,7 @@ print()
 
 
 # ----------------------------------------------------
-#             Quitar  un  elemento  a  una  lista.
+#           Quitar un elemento a una lista.
 # ---------------------------------------------------- 
 
 # se crea una lista inicial
@@ -475,16 +475,227 @@ print()
 
 
 
-
-
-
-
-
-
-
-
-
 #---------------------------------- ACTIVIDAD 05 ----------------------------------#
+# -------------------------------------------------------
+#        Usando *args (número indefinido de argumentos)
+# ------------------------------------------------------
+def mostrar_tareas(*tareas): #El asterisco (*) indica que aceptará un número variable de argumentos posicionales,que se agruparán en una tupla llamada 'tareas'.
+    '''
+        Función que muestra una lista de tareas.
+        Args:
+            *tareas: Número indefinido de tareas como argumentos.
+        Returns:
+            None
+    '''
+    for i, tarea in enumerate(tareas, 1):#Inicia un bucle 'for' para iterar sobre la tupla 'tareas'.
+# La función 'enumerate' asigna un índice a cada elemento.
+# El argumento '1' indica que la numeración debe comenzar desde 1 (no desde 0).
+# 'i' recibirá el número de tarea (1, 2, 3...), y 'tarea' recibirá el contenido de la tarea.
+        print(f"{i}. {tarea}")#Se usa una f-string para formatear la salida
+
+mostrar_tareas("Diseñar UI", "Depurar código", "Documentar fichas")
+# Llama a la función 'mostrar_tareas' con tres argumentos.
+# Estos tres strings se recogen dentro de la tupla 'tareas' de la función.
+
+print()#salto de linea
+
+#*******************************************************************************************#
+def calcular_suma(*args):
+    '''
+        Suma cualquier número de argumentos numéricos.
+        Args:
+            *args: tupla con todos los valores pasados(Número indefinido).
+        Returns:
+            float: La suma de todos los argumentos.
+    '''
+    if not args:
+
+        return 0 # Retorna 0 si no hay argumentos
+
+    suma = sum(args)
+    # calcula la suma de todos los elementos dentro de la tupla 'args'
+    # utilizando la función incorporada 'sum()' de Python, y guarda el resultado en la variable 'suma'.
+
+    print(f"Números a sumar: {args}")
+    # Imprime por pantalla la tupla completa de argumentos ('args') que están siendo sumados.
+    # f-string para incluir el valor de la variable 'args' en el mensaje.
+
+    return suma
+    # Retorna el valor calculado de la suma de los argumentos, finalizando la ejecución de la función.
+
+print()
+
+# Ejemplos de uso
+# 1. Llamada sin argumentos
+print(f"Resultado: {calcular_suma()}")
+# Salida: Números a sumar: () / Resultado: 0
+
+# 2. Llamada con 3 argumentos
+print(f"Resultado: {calcular_suma(10, 20, 30)}")
+# Salida: Números a sumar: (10, 20, 30) / Resultado: 60
+
+# 3. Llamada con 5 argumentos
+print(f"Resultado: {calcular_suma(1, 2, 3, 4, 5)}")
+# Salida: Números a sumar: (1, 2, 3, 4, 5) / Resultado: 15
+print()
+
+
+#*******************************************************************************************#
+# -------------------------------------------------------
+#                  Usando **args 
+# ------------------------------------------------------
+def mostrar_info(**datos):# Define una función llamada 'mostrar_info'.
+# El doble asterisco (**) indica que aceptará un número variable de argumentos de palabra clave (key-value pairs), los cuales serán recolectados en un diccionario llamado 'datos'.
+
+    for clave, valor in datos.items(): # para iterar sobre los pares clave-valor del diccionario 'datos'.
+# El método '.items()' devuelve pares (clave, valor) para cada elemento del diccionario.
+# 'clave' tomará el nombre del argumento (ej: "nombre", "proyecto"), y 'valor' tomará su valor (ej: "Miriam", "DAM").
+
+        print(f"{clave}: {valor}")# Imprime cada par clave-valor en un formato legible. Se utiliza una f-string para formatear la salida, como "nombre: Miriam".
+
+mostrar_info(nombre="Miriam", proyecto="DAM", año=2025) # Llama a la función 'mostrar_info' y le pasa tres argumentos de palabra clave.
+                                                        # Estos tres pares se combinan en el diccionario 'datos' dentro de la función.
+print()
+
+
+def configurar_objeto(nombre, **kwargs):
+    """
+        Configura un objeto con propiedades adicionales(nombre requerido y opciones indefinidas).
+        'kwargs' es un diccionario de opciones clave-valor.
+        Args:
+            nombre (str): Nombre del objeto a configurar.
+            **kwargs: Propiedades adicionales como pares clave-valor.
+        Returns:
+            None
+            Configura un objeto con un n.
+       """
+        
+    print(f"Configurando el objeto: {nombre}") # Muestra el nombre del objeto que se está configurando.
+
+    for clave, valor in kwargs.items():
+        print(f"  -> {clave}: {valor}")# Itera sobre cada par clave-valor en kwargs y los imprime con formato. Esto permite visualizar todas las propiedades adicionales del objeto.
+
+    if 'color' not in kwargs:
+        print("Advertencia: No se especificó el color.") # Verifica si no se ha proporcionado la clave 'color' en kwargs. Si falta, muestra una advertencia para alertar al usuario.
+
+# 1. Llamada con 3 parámetros nombrados (incluye 'color')
+configurar_objeto("Ventana Principal", ancho=800, alto=600, color="azul")
+print()
+# 2. Llamada con 2 parámetros nombrados (sin 'color')
+configurar_objeto("Botón OK", texto="Aceptar", estilo="plano")
+
+print()
+
+# --- Función para configurar un objeto con propiedades dinámicas ---
+def configurar_objeto(nombre, **kwargs):
+    '''
+        Configura un objeto con propiedades adicionales.
+        Args:
+            nombre (str): Nombre del objeto a configurar.
+            **kwargs: Propiedades adicionales como pares clave-valor.
+        Returns:
+            None
+    '''
+
+    print(f"Configurando el objeto: {nombre}")
+    
+    for clave, valor in kwargs.items():
+        print(f"  -> {clave}: {valor}")
+    
+    if 'color' not in kwargs:
+        print("Advertencia: No se especificó el color.")
+
+# --- Función para generar una ficha técnica a partir de propiedades ---
+def ficha_tecnica(**kwargs):
+    ficha = "Ficha Técnica\n"
+    for clave, valor in kwargs.items():
+        ficha += f"{clave}: {valor}\n"
+    return ficha
+
+# --- Ejecuciones de ejemplo ---
+# Configuración de un objeto tipo ventana
+configurar_objeto("Ventana Principal", ancho=800, alto=600, color="azul")
+
+# Configuración de un objeto tipo botón sin color
+configurar_objeto("Botón OK", texto="Aceptar", estilo="plano")
+
+print()
+
+def ficha_tecnica(**kwargs):
+    '''
+        Genera una ficha técnica a partir de propiedades dinámicas.
+        Args:
+            **kwargs: Propiedades como pares clave-valor.
+        Returns:
+            str: Ficha técnica formateada.
+    '''
+    ficha = "Ficha Técnica\n"
+    for clave, valor in kwargs.items():
+        ficha += f"{clave}: {valor}\n"
+    return ficha
+
+print(ficha_tecnica(nombre="Servidor", sistema="Ubuntu", versión="24.04"))
+print()
+
+#*******************************************************************************************#
+# -------------------------------------------------------
+#                  Combinando *arg y **args 
+# ------------------------------------------------------
+
+def procesar(*args, **kwargs): # Imprime los argumentos posicionales (almacenados en la tupla 'args').
+    '''
+    Procesa argumentos posicionales y nombrados.
+    Args:
+        *args: Argumentos posicionales.
+        **kwargs: Argumentos nombrados.
+    Returns:
+        None
+    '''
+    print("Posicionales:", args) 
+    print("Nombrados:", kwargs)
+
+# Llama a la función 'procesar'.
+# 1, 2 y 3 se pasan como argumentos posicionales.
+# modo="debug" y verbose=True se pasan como argumentos de palabra clave.
+procesar(1, 2, 3, modo="debug", verbose=True)
+print()
+
+
+def procesar_entrada(*args, **kwargs): # Imprime la tupla que contiene los argumentos posicionales.
+    print("Posicionales:", args)
+    # Imprime el diccionario que contiene los argumentos nombrados/de palabra clave.
+    print("Nombrados:", kwargs)
+
+# Llama a la función 'procesar_entrada'.
+# "inicio" y "carga" se pasan como argumentos posicionales.
+# modo="debug" y verbose=True se pasan como argumentos de palabra clave.
+procesar_entrada("inicio", "carga", modo="debug", verbose=True)
+print()
+
+
+def saludar(nombre, saludo="Hola"):# Imprime una cadena formateada (f-string) que combina el saludo y el nombre.
+    '''
+        Saluda a una persona con un saludo personalizado.
+        Args:
+            nombre (str): Nombre de la persona a saludar.
+            saludo (str, optional): Saludo a utilizar. Por defecto es "Hola".
+        Returns:
+            None
+    '''
+    print(f"{saludo}, {nombre}!")
+
+# Primera llamada a la función:
+# Se proporciona solo el argumento 'nombre' ("Miriam").
+# El argumento 'saludo' toma su valor por defecto: "Hola".
+saludar("Miriam")
+
+# Segunda llamada a la función:
+# Se proporcionan ambos argumentos: 'nombre' ("Miriam") y 'saludo' ("Buenos días").
+# El valor por defecto de 'saludo' es sobrescrito por "Buenos días".
+saludar("Miriam", "Buenos días") 
+print()
+
+
 #---------------------------------- ACTIVIDAD 06 ----------------------------------#
 
 # -------------------------------
@@ -546,18 +757,45 @@ Ejemplo en este caso: En el código anterior, la función key_function toma cada
 Si hay empate en las alturas, Python utiliza el peso, que se ordenará de menor a mayor, automáticamente gracias a la naturaleza de la tupla que se devuelve.
 
 '''
-#---------------------------------- ACTIVIDAD 07 ----------------------------------#
-import random
+print()
 
-# Definimos la clase Car
+
+#---------------------------------- ACTIVIDAD 07 ----------------------------------#
+import random  # Importa el módulo para generar colores aleatorios
+
+# ---  clase Car ---
 class Car:
     def __init__(self, matricula, color):
-        # Atributos de cada coche
-        self.matricula = matricula  # número identificador
-        self.color = color          # color del coche
-		#self.velocidad = 0 
-		#self.encendido = False
+        self.matricula = matricula  # Atributo numérico único
+        self.color = color          # Atributo de color aleatorio
 
     def imprimir(self):
-        # Método para mostrar los datos del coche
+        # Muestra los datos del coche
         print(f"Matrícula: {self.matricula}, Color: {self.color}")
+
+    def arrancar(self):
+        # Método adicional: simula el arranque
+        print(f"Carro {self.matricula} está arrancando...")
+
+    def detener(self):
+        # Método adicional: simula la detención
+        print(f"Carro {self.matricula} se ha detenido.")
+
+# --- Lista de colores disponibles ---
+colores_disponibles = ["red", "white", "*black", "pink", "blue"]
+
+# --- Solicita al usuario cuántos coches crear ---
+n = int(input("¿Cuántos coches quieres crear? "))  # Entrada por teclado
+
+# --- Crea 'n' instancias de Car con matrícula secuencial y color aleatorio ---
+flota = []  # Lista para almacenar los objetos Car
+
+for i in range(1, n + 1):
+    color_aleatorio = random.choice(colores_disponibles)  # Selección aleatoria
+    coche = Car(matricula=i, color=color_aleatorio)       # Instancia de Car
+    flota.append(coche)                                   # Añade a la lista
+
+# --- Imprime los datos de los primeros 10 coches (o menos si n < 10) ---
+print("\nFicha de los primeros coches:")
+for coche in flota[:10]:  # Slicing para limitar a 10
+    coche.imprimir()
