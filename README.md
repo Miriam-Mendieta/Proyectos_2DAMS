@@ -25,6 +25,8 @@ Cada proyecto está pensado para ser reutilizable , con código comentado y docu
 - Figma
 - Python
 - Docker
+- Jupyter Notebook
+- Markdown
 
 
  Tags:  #DAMS #CFGS #MULTIPLATAFORMA 
