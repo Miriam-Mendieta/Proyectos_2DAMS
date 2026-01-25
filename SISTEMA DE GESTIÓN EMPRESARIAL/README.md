@@ -11,7 +11,7 @@ El objetivo es integrar conocimientos técnicos y pedagógicos aplicados a entor
 - [🐳 Docker](https://github.com/Miriam-Mendieta/Proyectos_2DAMS/tree/main/SISTEMA%20DE%20GESTI%C3%93N%20EMPRESARIAL/UD01.%20Introducci%C3%B3n%20a%20Docker) 
 - [🧩 Implantación de Odoo](https://github.com/Miriam-Mendieta/Proyectos_2DAMS/tree/main/SISTEMA%20DE%20GESTI%C3%93N%20EMPRESARIAL/UD04.%20Implantaci%C3%B3n%20de%20%20ERP) 
 - [🛠️ Desarrollo de módulos de Odoo](https://github.com/Miriam-Mendieta/Proyectos_2DAMS/tree/main/SISTEMA%20DE%20GESTI%C3%93N%20EMPRESARIAL/UD06%20.Desarrollo%20de%20m%C3%B3dulos%20de%20Odoo%20Modelo%20y%20Vista)
-- 📊 Análisis de datos y Machine Learning  
+- [📊 Análisis de datos y Machine Learning]( https://github.com/Miriam-Mendieta/Proyectos_2DAMS/tree/main/SISTEMA%20DE%20GESTI%C3%93N%20EMPRESARIAL/UD08.%20Introducci%C3%B3n%20al%20Machine%20Learning)
 
 ---
 
