@@ -136,7 +136,7 @@ Puedes enlazar a recursos externos o internos de forma sencilla.
 
 ---
 
-## 💻 Bloques de Código Avanzados
+## Bloques de Código Avanzados
 
 Esencial para mostrar ejemplos de programación.
 
@@ -161,7 +161,7 @@ console.log(sum(10, 20));
 
 ---
 
-## 📊 Tablas de Datos
+## Tablas de Datos
 
  Las tablas permiten organizar datos complejos. Se construyen con tres partes esenciales:
 
@@ -187,7 +187,7 @@ console.log(sum(10, 20));
 
 ---
 
-## 💡 Citas y Bloques
+## Citas y Bloques
 
 Las citas resaltan frases importantes, mientras que las notas (bloques de alerta) sirven para aclaraciones.
 
@@ -224,7 +224,7 @@ Controla el comportamiento de las diapositivas.
 
 ---
 
-## 🎨 Temas Disponibles
+## Temas Disponibles
 
 Marp viene con 3 temas predefinidos, pero puedes crear los tuyos:
 
@@ -232,11 +232,9 @@ Marp viene con 3 temas predefinidos, pero puedes crear los tuyos:
 - `gaia`: Moderno, con transiciones suaves y buen contraste.
 - `uncover`: Ideal para resaltar títulos grandes.
 
-![bg fit](https://user-images.githubusercontent.com/3993388/66432371-d607e080-e9da-11e9-9069-1c94025d26ac.png)
-
 ---
 
-## 🛠️ Cómo generar el archivo html
+## Cómo generar el archivo html
 
 - Abre tu archivo .md en VS Code.
 
@@ -248,7 +246,7 @@ Marp viene con 3 temas predefinidos, pero puedes crear los tuyos:
 
 ---
 
-## 🚀 Exportación y Distribución
+## Exportación y Distribución
 
 Convierte tu `.md` en formatos estándar:
 
