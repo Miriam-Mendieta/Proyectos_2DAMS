@@ -38,9 +38,9 @@ Bienvenidos a mi espacio de creación y diseño. Este repositorio centraliza la 
 
 | Herramienta | Uso Principal |
 | --- | --- |
-| **Flutter SDK** | Framework principal de UI |
+| **Flutter ** | Framework |
 | **Dart** | Lenguaje de programación |
-| **Material Design 3** | Sistema de diseño de componentes |
+| **Figma** | Diseño gráfico y prototipado (UI/UX) |
 | **Android Studio / VS Code** | Entorno de desarrollo |
 | **Git / GitHub** | Control de versiones |
 
