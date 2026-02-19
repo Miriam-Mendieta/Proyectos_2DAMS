@@ -10,17 +10,18 @@ Bienvenidos a mi espacio de creación y diseño. Este repositorio centraliza la 
 
 ### 🖋️ Fase 1: Prototipado y UX/UI
 
-* **[Diseño de una Aplicación Digital](enlace)**
+* **[Diseño de una Aplicación Digital](https://github.com/Miriam-Mendieta/Proyectos_2DAMS/tree/main/DESARROLLO%20DE%20INTERFACES/TABLERAMA%20-%20PIXIE%20LA%20Pulga%20Viajera)**
 * *Enfoque:* Creación de wireframes, elección de paletas cromáticas y definición de la arquitectura de información.
-* *Herramientas:* Figma / Adobe XD.
+* *Herramienta:* Figma.
 
 
 
 ### ⚙️ Fase 2: Lógica y Lenguaje
 
 * **[Codificación con Dart](enlacei)**
-* *Enfoque:* Dominio de la sintaxis de Dart, programación asíncrona y estructuras de datos necesarias para alimentar las interfaces.
-* *Conceptos:* Mixins, Lambdas y Futures.
+* *Enfoque:* Dominio de la sintaxis de Dart,resolución de problemas algorítmicos y capacidad para comprender, adaptar, documentar y mejorar código
+             basándose en feedback específico .
+* *Prácticas:* https://www.codewars.com/
 
 
 
@@ -28,7 +29,8 @@ Bienvenidos a mi espacio de creación y diseño. Este repositorio centraliza la 
 
 * **[Primera Aplicación Completa con Flutter](-enlace)**
 * *Enfoque:* Implementación de widgets, gestión de estados y navegación fluida entre pantallas.
-* *Resultado:* APK funcional y diseño responsivo.
+* *Resultado:* APK funcional y diseño responsivo. Aplicación Flutter con integración backend.
+
 
 
 
