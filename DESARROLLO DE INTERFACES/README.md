@@ -40,7 +40,7 @@ Bienvenidos a mi espacio de creación y diseño. Este repositorio centraliza la 
 
 | Herramienta | Uso Principal |
 | --- | --- |
-| **Flutter ** | Framework |
+| **Flutter** | Framework |
 | **Dart** | Lenguaje de programación |
 | **Figma** | Diseño gráfico y prototipado (UI/UX) |
 | **Android Studio / VS Code** | Entorno de desarrollo |
