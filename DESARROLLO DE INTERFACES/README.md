@@ -46,13 +46,5 @@ Bienvenidos a mi espacio de creación y diseño. Este repositorio centraliza la 
 
 ---
 
-## 💡 Metodología de Trabajo
 
-Para estos proyectos he seguido un flujo de trabajo profesional:
-
-1. **Ideación:** Sketching rápido de interfaces.
-2. **Desarrollo:** Programación reactiva con widgets de Flutter.
-3. **Refactorización:** Limpieza de código y optimización de rendimiento.
-
----
 
