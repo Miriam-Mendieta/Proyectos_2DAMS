@@ -64,7 +64,7 @@
 lib/
 ├── config/           # Configuración multiplataforma (web: window, mobile: .env)
 ├── models/           # Modelos inmutables con Freezed (Exercise, UserProfile, etc.)
-├── pages/            # 17 pantallas (splash, login, quiz, tienda, etc.)
+├── pages/            # 15 pantallas (splash, login, quiz, tienda, etc.)
 ├── providers/        # 6 providers Riverpod (Auth, Quiz, Economia, etc.)
 ├── routes/           # Enrutamiento declarativo con GoRouter
 ├── services/         # Servicios externos (AiGeminiService, MusicService)
