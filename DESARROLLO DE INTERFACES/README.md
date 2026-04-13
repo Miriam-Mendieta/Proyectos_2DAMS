@@ -27,7 +27,7 @@ Bienvenidos a mi espacio de creación y diseño. Este repositorio centraliza la 
 
 ### 📱 Fase 3: Construcción Multiplataforma
 
-* **[Primera Aplicación Completa con Flutter](-enlace)**
+* **[Primera Aplicación Completa con Flutter](https://github.com/Miriam-Mendieta/Proyectos_2DAMS/tree/main/DESARROLLO%20DE%20INTERFACES/Python%20Quizz%20Flash)**
 * *Enfoque:* Implementación de widgets, gestión de estados y navegación fluida entre pantallas.
 * *Resultado:* APK funcional y diseño responsivo. Aplicación Flutter con integración backend.
 
