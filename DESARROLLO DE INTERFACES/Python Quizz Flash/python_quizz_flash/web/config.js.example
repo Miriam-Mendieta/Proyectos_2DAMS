@@ -1,0 +1,47 @@
+// ╔════════════════════════════════════════════════════════╗
+// ║  PYTHON QUIZZ FLASH - CONFIGURACIÓN WEB                ║
+// ║  ====================================================  ║
+// ║  INSTRUCCIONES:                                        ║
+// ║  1. Copia este archivo a web/config.js                 ║
+// ║     (cp web/config.js.example web/config.js)           ║
+// ║  2. Reemplaza los placeholders con tus claves reales   ║
+// ║  3. NUNCA commites web/config.js a git                 ║
+// ║  ====================================================  ║
+// ║  OBTENER CREDENCIALES:                                 ║
+// ║  - Firebase: https://console.firebase.google.com/      ║
+// ║  - Gemini: https://makersuite.google.com/app/apikey    ║
+// ║  - Groq: https://console.groq.com/keys                 ║
+// ╚════════════════════════════════════════════════════════╝
+
+// ⚠️ ESTE ARCHIVO ES SOLO UNA PLANTILLA
+// ✅ Copia a web/config.js y reemplaza con tus credenciales reales
+
+window.flutter_config = {
+  // ==========================================
+  // GOOGLE GEMINI API KEY
+  // ==========================================
+  // Para IA de explicaciones y ejercicios de Python
+  // Obtén tu clave en: https://makersuite.google.com/app/apikey
+  // Límite gratuito: 60 requests/minuto
+  'GEMINI_API_KEY': 'TU_GEMINI_API_KEY_AQUI',
+
+  // ==========================================
+  // GROQ API KEY (OPCIONAL - para fallback)
+  // ==========================================
+  // Para fallback cuando Gemini falla
+  // Obtén tu clave en: https://console.groq.com/keys
+  // Límite gratuito: 30 requests/minuto
+  'GROQ_API_KEY': 'TU_GROQ_API_KEY_AQUI',
+
+  // ==========================================
+  // FIREBASE CONFIGURATION
+  // ==========================================
+  // Obtén estos valores en: https://console.firebase.google.com/
+  // Ve a: Tu proyecto → Configuración del proyecto → Tus apps → Flutter
+  'FIREBASE_API_KEY': 'TU_FIREBASE_API_KEY_AQUI',
+  'FIREBASE_AUTH_DOMAIN': 'TU_PROYECTO.firebaseapp.com',
+  'FIREBASE_PROJECT_ID': 'TU_PROYECTO_ID',
+  'FIREBASE_STORAGE_BUCKET': 'TU_PROYECTO.firebasestorage.app',
+  'FIREBASE_MESSAGING_SENDER_ID': 'TU_SENDER_ID',
+  'FIREBASE_APP_ID': 'TU_APP_ID',
+};

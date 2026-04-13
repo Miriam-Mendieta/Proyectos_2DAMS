@@ -1,0 +1,3725 @@
+{
+  "basic": [
+    {
+      "id": "b_1",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Cuál es el tipo de dato de la variable x en: x = 5?",
+      "options": [
+        "str (cadena)",
+        "int (entero)",
+        "float (flotante)",
+        "bool (booleano)"
+      ],
+      "correctAnswer": "int (entero)",
+      "defaultExplanation": "En Python, los números sin decimales son de tipo int (entero). Los flotantes tienen punto decimal (ej: 5.0).",
+      "hint": "Es un número sin decimales.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_2",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué operador se usa para comparar si dos valores son iguales en Python?",
+      "options": [
+        "= (un igual)",
+        "== (doble igual)",
+        "!= (diferente)",
+        "=== (triple igual)"
+      ],
+      "correctAnswer": "== (doble igual)",
+      "defaultExplanation": "En Python, '==' compara igualdad. Un solo '=' es para asignar valores a variables.",
+      "hint": "Se necesitan dos símbolos de igual.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_3",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué resultado se imprime al ejecutar: print(3 == 3 and 4 > 2)?",
+      "codeSnippet": "print(3 == 3 and 4 > 2)",
+      "options": [
+        "True",
+        "False",
+        "None",
+        "Error"
+      ],
+      "correctAnswer": "True",
+      "defaultExplanation": "3 == 3 es True y 4 > 2 es True. Como ambos son True, la expresión completa es True.",
+      "hint": "True and True = True",
+      "coinReward": 10
+    },
+    {
+      "id": "b_4",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Cuál es la sintaxis correcta para definir una función en Python?",
+      "options": [
+        "def nombre():",
+        "function nombre():",
+        "define nombre():",
+        "func nombre():"
+      ],
+      "correctAnswer": "def nombre():",
+      "defaultExplanation": "En Python se usa la palabra clave 'def' seguida del nombre, paréntesis y dos puntos.",
+      "hint": "Es la abreviatura de 'define' en inglés.",
+      "coinReward": 10,
+      "codeSnippet": "# ¿Cómo se define una función?"
+    },
+    {
+      "id": "b_5",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué sucede después de ejecutar este código?\n\nlista = [1, 2]\nlista.append(3)",
+      "codeSnippet": "lista = [1, 2]\nlista.append(3)",
+      "options": [
+        "La lista es [1, 2, 3]",
+        "La lista es [1, 2, [3]]",
+        "AttributeError",
+        "La lista no cambia"
+      ],
+      "correctAnswer": "La lista es [1, 2, 3]",
+      "defaultExplanation": "El método .append() agrega un elemento al final de la lista.",
+      "hint": "Agrega el elemento directamente.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_6",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué hace el método .strip() en un string?",
+      "codeSnippet": "'  hola  '.strip()",
+      "options": [
+        "Elimina espacios en blanco al inicio y final",
+        "Convierte a mayúsculas",
+        "Convierte a minúsculas",
+        "Corta el string en partes"
+      ],
+      "correctAnswer": "Elimina espacios en blanco al inicio y final",
+      "defaultExplanation": ".strip() limpia los espacios en blanco (u otros caracteres) de los extremos del string.",
+      "hint": "Limpia los bordes del string.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_7",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Cuál es la forma correcta de acceder al valor asociado con la clave 'nombre' en un diccionario?",
+      "codeSnippet": "diccionario = {'nombre': 'Ana', 'edad': 25}",
+      "options": [
+        "diccionario['nombre']",
+        "diccionario.nombre",
+        "diccionario(nombre)",
+        "diccionario.get['nombre']"
+      ],
+      "correctAnswer": "diccionario['nombre']",
+      "defaultExplanation": "En Python, se usan corchetes [] con la clave entre comillas para acceder a valores de diccionarios.",
+      "hint": "Usa corchetes con la clave.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_8",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué valores genera range(5) en un bucle for?",
+      "codeSnippet": "for i in range(5):\n    print(i)",
+      "options": [
+        "0, 1, 2, 3, 4",
+        "1, 2, 3, 4, 5",
+        "0, 1, 2, 3, 4, 5",
+        "1, 2, 3, 4"
+      ],
+      "correctAnswer": "0, 1, 2, 3, 4",
+      "defaultExplanation": "range(5) genera números desde 0 hasta 4 (el límite superior no está incluido).",
+      "hint": "Empieza en 0 y termina en N-1.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_9",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Cuál es el resultado de la operación: 10 % 3?",
+      "codeSnippet": "resultado = 10 % 3",
+      "options": [
+        "1",
+        "3",
+        "0",
+        "3.33"
+      ],
+      "correctAnswer": "1",
+      "defaultExplanation": "El operador % (módulo) devuelve el residuo de la división. 10 ÷ 3 = 3 con residuo 1.",
+      "hint": "Es el sobrante de dividir 10 entre 3.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_10",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué función se usa para leer entrada del usuario desde la consola?",
+      "options": [
+        "read()",
+        "get()",
+        "input()",
+        "scan()"
+      ],
+      "correctAnswer": "input()",
+      "defaultExplanation": "input() lee datos ingresados por el usuario y los devuelve como string.",
+      "hint": "Significa 'entrada' en inglés.",
+      "coinReward": 10,
+      "codeSnippet": "valor = input('Ingresa algo: ')"
+    },
+    {
+      "id": "b_11",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué hace el método .replace('a', 'e') en un string?",
+      "codeSnippet": "'casa'.replace('a', 'e')",
+      "options": [
+        "Busca la letra 'a'",
+        "Reemplaza 'a' por 'e'",
+        "Elimina la letra 'a'",
+        "Convierte a mayúsculas"
+      ],
+      "correctAnswer": "Reemplaza 'a' por 'e'",
+      "defaultExplanation": ".replace(old, new) sustituye todas las ocurrencias del primer argumento por el segundo.",
+      "hint": "Cambia una letra por otra.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_12",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Cuál es la sintaxis correcta para importar un módulo en Python?",
+      "options": [
+        "module math",
+        "import math",
+        "using math",
+        "require math"
+      ],
+      "correctAnswer": "import math",
+      "defaultExplanation": "En Python se usa 'import' seguido del nombre del módulo.",
+      "hint": "Significa 'importar' en inglés.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_13",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué valor devuelve la expresión x > 10 si x = 5?",
+      "codeSnippet": "x = 5\nresultado = x > 10",
+      "options": [
+        "True",
+        "False",
+        "None",
+        "Error"
+      ],
+      "correctAnswer": "False",
+      "defaultExplanation": "5 no es mayor que 10, por lo tanto la comparación devuelve False.",
+      "hint": "5 es menor que 10.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_14",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué tipo de error ocurre al dividir un número entre cero?",
+      "codeSnippet": "resultado = 10 / 0",
+      "options": [
+        "ValueError",
+        "ZeroDivisionError",
+        "TypeError",
+        "IndexError"
+      ],
+      "correctAnswer": "ZeroDivisionError",
+      "defaultExplanation": "Python lanza ZeroDivisionError porque matemáticamente no se puede dividir entre cero.",
+      "hint": "El nombre lo dice: división por cero.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_15",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué resultado obtienes con lista[1:3]?",
+      "codeSnippet": "lista = [10, 20, 30, 40]\nresultado = lista[1:3]",
+      "options": [
+        "[10, 20]",
+        "[20, 30]",
+        "[20, 30, 40]",
+        "[10, 20, 30]"
+      ],
+      "correctAnswer": "[20, 30]",
+      "defaultExplanation": "El slicing [1:3] toma desde el índice 1 hasta el 2 (el 3 no está incluido).",
+      "hint": "Índices 1 y 2, el 3 no se incluye.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_16",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué palabra clave se usa para devolver un valor desde una función?",
+      "codeSnippet": "def suma(a, b):\n    ___ a + b",
+      "options": [
+        "return",
+        "yield",
+        "send",
+        "output"
+      ],
+      "correctAnswer": "return",
+      "defaultExplanation": "return devuelve un valor desde la función y termina su ejecución.",
+      "hint": "Significa 'retornar' en inglés.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_17",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué método convierte un string a minúsculas?",
+      "codeSnippet": "'HOLA'.___()",
+      "options": [
+        "lower()",
+        "down()",
+        "min()",
+        "small()"
+      ],
+      "correctAnswer": "lower()",
+      "defaultExplanation": ".lower() convierte todos los caracteres del string a minúsculas.",
+      "hint": "Significa 'inferior' en inglés.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_18",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué hace un bucle while True?",
+      "codeSnippet": "while True:\n    print('Hola')",
+      "options": [
+        "Crea un bucle infinito",
+        "Se ejecuta una vez y se detiene",
+        "Da error de sintaxis",
+        "No se ejecuta nunca"
+      ],
+      "correctAnswer": "Crea un bucle infinito",
+      "defaultExplanation": "while True crea un bucle que nunca termina porque la condición siempre es verdadera.",
+      "hint": "Nunca se detiene solo.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_19",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Cuál es el resultado de: 3 + 4 * 2?",
+      "codeSnippet": "resultado = 3 + 4 * 2",
+      "options": [
+        "14",
+        "11",
+        "10",
+        "24"
+      ],
+      "correctAnswer": "11",
+      "defaultExplanation": "Por jerarquía de operaciones, primero se multiplica (4*2=8) y luego se suma (3+8=11).",
+      "hint": "Primero multiplicación, luego suma.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_20",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué devuelve .get() si la clave no existe en el diccionario?",
+      "codeSnippet": "diccionario = {'nombre': 'Ana'}\nresultado = diccionario.get('edad')",
+      "options": [
+        "None",
+        "0",
+        "KeyError",
+        "Una cadena vacía"
+      ],
+      "correctAnswer": "None",
+      "defaultExplanation": ".get() devuelve None si la clave no existe, evitando que se lance un error.",
+      "hint": "Representa ausencia de valor.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_21",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué hace la instrucción 'from math import *'?",
+      "codeSnippet": "from math import *",
+      "options": [
+        "Importa solo algunas funciones",
+        "Importa todo el módulo math",
+        "Da error de sintaxis",
+        "No hace nada"
+      ],
+      "correctAnswer": "Importa todo el módulo math",
+      "defaultExplanation": "El asterisco (*) importa todas las funciones y constantes del módulo math.",
+      "hint": "El asterisco significa 'todo'.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_22",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué se imprime al ejecutar este código?",
+      "codeSnippet": "if True:\n    print('Hola')",
+      "options": [
+        "Hola",
+        "False",
+        "Nada",
+        "Error"
+      ],
+      "correctAnswer": "Hola",
+      "defaultExplanation": "La condición del if es True (verdadero), por lo que el bloque de código dentro del if se ejecuta. Python imprime 'Hola' en la consola. Si la condición fuera False, el print se saltaría y no se imprimiría nada.",
+      "hint": "True significa verdadero, el bloque se ejecuta.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_23",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Cuál es la forma correcta de imprimir 'Hola, Mundo' en Python?",
+      "options": [
+        "print('Hola, Mundo')",
+        "echo 'Hola, Mundo'",
+        "output('Hola, Mundo')",
+        "println('Hola, Mundo')"
+      ],
+      "correctAnswer": "print('Hola, Mundo')",
+      "defaultExplanation": "En Python se usa la función print() para mostrar texto en consola.",
+      "hint": "Es la función básica de salida.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_24",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué tipo de dato es el valor True?",
+      "codeSnippet": "type(True)",
+      "options": [
+        "int (entero)",
+        "float (flotante)",
+        "str (cadena)",
+        "bool (booleano)"
+      ],
+      "correctAnswer": "bool (booleano)",
+      "defaultExplanation": "True y False son valores booleanos que representan verdadero y falso.",
+      "hint": "Representa un valor de verdad.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_25",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué resultado devuelve str(100)?",
+      "codeSnippet": "resultado = str(100)",
+      "options": [
+        "100 (entero)",
+        "'100' (cadena)",
+        "100.0 (flotante)",
+        "Error"
+      ],
+      "correctAnswer": "'100' (cadena)",
+      "defaultExplanation": "str() convierte cualquier valor a una cadena de texto.",
+      "hint": "Convierte a texto.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_26",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué se imprime al ejecutar este bucle?",
+      "codeSnippet": "for i in range(3):\n    print(i)",
+      "options": [
+        "0 1 2",
+        "1 2 3",
+        "0 1 2 3",
+        "1 2"
+      ],
+      "correctAnswer": "0 1 2",
+      "defaultExplanation": "range(3) genera 0, 1, 2 (tres números empezando desde 0).",
+      "hint": "Tres números desde cero.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_27",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Cuál es la sintaxis correcta para definir una función sin argumentos?",
+      "options": [
+        "def funcion():",
+        "def funcion[]:",
+        "funcion():",
+        "func():"
+      ],
+      "correctAnswer": "def funcion():",
+      "defaultExplanation": "Se usa 'def', nombre de la función, paréntesis vacíos y dos puntos.",
+      "hint": "Paréntesis vacíos con dos puntos.",
+      "coinReward": 10,
+      "codeSnippet": "# Función sin parámetros"
+    },
+    {
+      "id": "b_28",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué valor se almacena en la variable 'resultado' al ejecutar este código?",
+      "codeSnippet": "lista = [10, 20, 30]\nresultado = lista.index(20)\n# ¿Qué valor tiene resultado?",
+      "options": [
+        "20 (el valor buscado)",
+        "1 (la posición donde está 20)",
+        "Error (el método no existe)",
+        "None (no lo encuentra)"
+      ],
+      "correctAnswer": "1 (la posición donde está 20)",
+      "defaultExplanation": "El método .index(20) devuelve el índice/posición del elemento 20 en la lista. Como 20 está en la segunda posición (índice 1), resultado = 1.",
+      "hint": "Los índices comienzan en 0: [10]=0, [20]=1, [30]=2.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_29",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué números imprime este bucle for?",
+      "codeSnippet": "for i in range(1, 4):\n    print(i)",
+      "options": [
+        "1 2 3",
+        "1 2 3 4",
+        "0 1 2 3",
+        "2 3 4"
+      ],
+      "correctAnswer": "1 2 3",
+      "defaultExplanation": "range(1, 4) genera números desde 1 hasta 3 (el 4 no está incluido).",
+      "hint": "Desde 1 hasta 3 inclusive.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_30",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué error ocurre al acceder a un índice que no existe en una lista vacía?",
+      "codeSnippet": "lista = []\nprint(lista[0])",
+      "options": [
+        "IndexError",
+        "ValueError",
+        "TypeError",
+        "KeyError"
+      ],
+      "correctAnswer": "IndexError",
+      "defaultExplanation": "IndexError ocurre cuando intentas acceder a un índice que está fuera del rango de la lista.",
+      "hint": "Error de índice fuera de rango.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_31",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué hace el método .split() en un string?",
+      "codeSnippet": "'hola mundo'.split()",
+      "options": [
+        "Convierte a mayúsculas",
+        "Divide el string en una lista",
+        "Concatena strings",
+        "Elimina espacios"
+      ],
+      "correctAnswer": "Divide el string en una lista",
+      "defaultExplanation": ".split() divide un string por espacios (u otro separador) y devuelve una lista.",
+      "hint": "Separa el string en partes.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_32",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué módulo se usa para operaciones matemáticas como sqrt, pi, sin?",
+      "options": [
+        "math",
+        "numpy",
+        "statistics",
+        "random"
+      ],
+      "correctAnswer": "math",
+      "defaultExplanation": "El módulo math contiene funciones matemáticas como sqrt(), sin(), cos(), y la constante pi.",
+      "hint": "Significa 'matemáticas' en inglés.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_33",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué tipo de dato devuelve siempre la función input()?",
+      "codeSnippet": "valor = input('Ingresa algo: ')",
+      "options": [
+        "int (entero)",
+        "float (flotante)",
+        "str (cadena)",
+        "bool (booleano)"
+      ],
+      "correctAnswer": "str (cadena)",
+      "defaultExplanation": "input() siempre devuelve un string, incluso si el usuario escribe números.",
+      "hint": "Siempre es texto.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_34",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Cuál es el resultado de 4 ** 2?",
+      "codeSnippet": "resultado = 4 ** 2",
+      "options": [
+        "2",
+        "8",
+        "16",
+        "Error"
+      ],
+      "correctAnswer": "16",
+      "defaultExplanation": "El operador ** es potencia. 4 ** 2 significa 4 elevado al cuadrado (4×4=16).",
+      "hint": "4 al cuadrado.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_35",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué bloque se ejecuta cuando la condición del if es False?",
+      "codeSnippet": "if False:\n    print('if')\nelse:\n    print('else')",
+      "options": [
+        "else",
+        "elif",
+        "Nada",
+        "Error"
+      ],
+      "correctAnswer": "else",
+      "defaultExplanation": "El bloque else se ejecuta cuando la condición del if no se cumple (es False).",
+      "hint": "Es la alternativa del if.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_36",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué símbolo falta al final para que esta línea sea válida en Python?",
+      "codeSnippet": "if 5 > 3  # ← ¿qué falta aquí?",
+      "options": [
+        ":",
+        ";",
+        "{",
+        "then"
+      ],
+      "correctAnswer": ":",
+      "defaultExplanation": "En Python, las estructuras de control (if, for, while, def) terminan con dos puntos (:).",
+      "hint": "Dos puntos.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_37",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué hace esta función?",
+      "codeSnippet": "def suma(a, b=10):\n    return a + b",
+      "options": [
+        "Suma a y b (b vale 10 por defecto)",
+        "Solo suma a",
+        "Da error",
+        "No hace nada"
+      ],
+      "correctAnswer": "Suma a y b (b vale 10 por defecto)",
+      "defaultExplanation": "La función tiene un parámetro con valor por defecto. Si no se pasa b, vale 10.",
+      "hint": "Tiene valor predeterminado.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_38",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿En qué índice comienza una lista en Python?",
+      "codeSnippet": "lista = [10, 20, 30]",
+      "options": [
+        "0",
+        "1",
+        "-1",
+        "Depende de la lista"
+      ],
+      "correctAnswer": "0",
+      "defaultExplanation": "En Python (y muchos lenguajes), los índices de listas comienzan en 0.",
+      "hint": "El primer elemento es índice 0.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_39",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Cuál de estas condiciones hace que se imprima 'Verdadero'?",
+      "codeSnippet": "if CONDICION:\n    print('Verdadero')",
+      "options": [
+        "5 > 3",
+        "10 < 5",
+        "False",
+        "0"
+      ],
+      "correctAnswer": "5 > 3",
+      "defaultExplanation": "5 > 3 es True (verdadero), por lo que el print se ejecuta. Las otras opciones (10 < 5, False, 0) son falsy y no ejecutarían el bloque.",
+      "hint": "Busca la comparación que es verdadera.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_39b",
+      "difficulty": "basic",
+      "type": "fillInTheBlank",
+      "question": "Completa: ¿Qué palabra clave se usa para definir una FUNCIÓN?",
+      "codeSnippet": "___ mi_funcion():\n    pass",
+      "correctAnswer": "def",
+      "defaultExplanation": "En Python, 'def' es la palabra clave para definir funciones. Viene de 'define'.",
+      "hint": "Tres letras: d-e-f.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_39c",
+      "difficulty": "basic",
+      "type": "fillInTheBlank",
+      "question": "Completa: ¿Qué símbolo se usa para el MÓDULO (residuo)?",
+      "codeSnippet": "10 ___ 3 = 1  # El residuo de 10/3",
+      "correctAnswer": "%",
+      "defaultExplanation": "El operador % devuelve el residuo de una división. 10 % 3 = 1.",
+      "hint": "Símbolo de porcentaje.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_39d",
+      "difficulty": "basic",
+      "type": "fillInTheBlank",
+      "question": "Completa: ¿Qué función imprime en consola?",
+      "codeSnippet": "___('Hola Mundo')",
+      "correctAnswer": "print",
+      "defaultExplanation": "print() es la función básica para mostrar texto en la consola.",
+      "hint": "Significa 'imprimir' en inglés.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_39e",
+      "difficulty": "basic",
+      "type": "fillInTheBlank",
+      "question": "Completa: ¿Qué palabra clave se usa para un BUCLE que se repite?",
+      "codeSnippet": "___ i in range(5):\n    print(i)",
+      "correctAnswer": "for",
+      "defaultExplanation": "'for' es la palabra clave para bucles que iteran sobre una secuencia.",
+      "hint": "Cuatro letras: f-o-r.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_39f",
+      "difficulty": "basic",
+      "type": "fillInTheBlank",
+      "question": "Completa: ¿Qué operador compara IGUALDAD?",
+      "codeSnippet": "5 ___ 5  # Devuelve True",
+      "correctAnswer": "==",
+      "defaultExplanation": "El operador == compara si dos valores son iguales.",
+      "hint": "Dos signos de igual.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_39g",
+      "difficulty": "basic",
+      "type": "fillInTheBlank",
+      "question": "Completa: ¿Qué método agrega elementos a una LISTA?",
+      "codeSnippet": "mi_lista = [1, 2]\nmi_lista.___(3)  # Agrega 3 al final",
+      "correctAnswer": "append",
+      "defaultExplanation": "El método .append() agrega un elemento al final de la lista.",
+      "hint": "Significa 'agregar' en inglés.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_39h",
+      "difficulty": "basic",
+      "type": "fillInTheBlank",
+      "question": "Completa: ¿Qué palabra clave devuelve un valor de una FUNCIÓN?",
+      "codeSnippet": "def suma(a, b):\n    ___ a + b",
+      "correctAnswer": "return",
+      "defaultExplanation": "'return' devuelve un valor desde una función y termina su ejecución.",
+      "hint": "Significa 'retornar' en inglés.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_39i",
+      "difficulty": "basic",
+      "type": "fillInTheBlank",
+      "question": "Completa: ¿Qué símbolo se usa para COMENTARIOS?",
+      "codeSnippet": "___ Esto es un comentario",
+      "correctAnswer": "#",
+      "defaultExplanation": "El símbolo # indica que el resto de la línea es un comentario.",
+      "hint": "Símbolo de numeral/gato.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_39j",
+      "difficulty": "basic",
+      "type": "fillInTheBlank",
+      "question": "Completa: ¿Qué función devuelve la LONGITUD de una lista?",
+      "codeSnippet": "lista = [1, 2, 3]\n___(lista)  # Devuelve 3",
+      "correctAnswer": "len",
+      "defaultExplanation": "len() devuelve el número de elementos de una secuencia.",
+      "hint": "Tres letras: l-e-n.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_39k",
+      "difficulty": "basic",
+      "type": "fillInTheBlank",
+      "question": "Completa: ¿Qué palabra clave es para la alternativa del IF?",
+      "codeSnippet": "if condicion:\n    # código si es verdadero\n___:\n    # código si es falso",
+      "correctAnswer": "else",
+      "defaultExplanation": "'else' define el bloque que se ejecuta cuando la condición del if es falsa.",
+      "hint": "Cuatro letras: e-l-s-e.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_40",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué operador se usa para verificar si dos valores son diferentes?",
+      "codeSnippet": "5 ___ 3  # Devuelve True",
+      "options": [
+        "!=",
+        "==",
+        "<>",
+        "><"
+      ],
+      "correctAnswer": "!=",
+      "defaultExplanation": "!= es el operador de desigualdad. Devuelve True si los valores son diferentes.",
+      "hint": "Signo de diferente.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_41",
+      "difficulty": "basic",
+      "type": "coding",
+      "question": "CORRIGE el error: La función debe sumar los dos parámetros, no concatenar con un string.",
+      "codeSnippet": "def suma(a, b):\n    return a + 'b'",
+      "correctAnswer": "def suma(a, b):\n    return a + b",
+      "expectedOutput": "suma(3, 5) → 8",
+      "defaultExplanation": "El error está en las comillas: 'b' es un string. Para sumar variables numéricas, usa `b` sin comillas.",
+      "hint": "Quita las comillas de la letra b.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_42",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "Selecciona la sintaxis CORRECTA para definir una lista con los números del 1 al 5:",
+      "codeSnippet": "# ¿Cuál es la forma correcta?",
+      "options": [
+        "[1, 2, 3, 4, 5]",
+        "(1, 2, 3, 4, 5)",
+        "{1, 2, 3, 4, 5}",
+        "list(1-5)"
+      ],
+      "correctAnswer": "[1, 2, 3, 4, 5]",
+      "defaultExplanation": "Las listas en Python usan corchetes []. Las tuplas usan (), y los diccionarios/conjuntos usan {}.",
+      "hint": "Los corchetes [] son para listas.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_43",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué se imprime al ejecutar este código?",
+      "codeSnippet": "for i in range(3):\n    print(i * 2)",
+      "options": [
+        "0, 2, 4",
+        "1, 2, 3",
+        "2, 4, 6",
+        "0, 1, 2"
+      ],
+      "correctAnswer": "0, 2, 4",
+      "defaultExplanation": "range(3) genera [0, 1, 2]. Cada valor se multiplica por 2: 0×2=0, 1×2=2, 2×2=4.",
+      "hint": "Piensa: 0, 1, 2 multiplicados por 2.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_44",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué ERROR ocurre al ejecutar este código?",
+      "codeSnippet": "lista = [1, 2, 3]\nprint(lista[3])",
+      "options": [
+        "IndexError: list index out of range",
+        "ValueError",
+        "TypeError",
+        "No ocurre ningún error"
+      ],
+      "correctAnswer": "IndexError: list index out of range",
+      "defaultExplanation": "El índice 3 no existe. La lista tiene índices 0, 1, 2. Intentar acceder a [3] causa IndexError.",
+      "hint": "El último índice válido es 2.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_49",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "Selecciona el código CORRECTO para eliminar el último elemento de una lista:",
+      "codeSnippet": "mi_lista = [1, 2, 3]\n# ¿Qué código elimina el último elemento?",
+      "options": [
+        "mi_lista.pop()",
+        "mi_lista.remove()",
+        "mi_lista.delete()",
+        "mi_lista.pop(0)"
+      ],
+      "correctAnswer": "mi_lista.pop()",
+      "defaultExplanation": ".pop() sin argumentos elimina el último elemento. .pop(0) elimina el primero.",
+      "hint": "pop() sin parámetros.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_50",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "Completa: ¿Qué palabra clave se usa para DETENER un bucle inmediatamente?",
+      "codeSnippet": "while True:\n    if condicion:\n        ___  # Detiene el bucle",
+      "options": [
+        "break",
+        "stop",
+        "exit",
+        "continue"
+      ],
+      "correctAnswer": "break",
+      "defaultExplanation": "break termina inmediatamente el bucle. continue solo salta a la siguiente iteración.",
+      "hint": "Significa 'romper' en inglés.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_51",
+      "difficulty": "basic",
+      "type": "coding",
+      "question": "COMPLETA la función para que sume todos los elementos de la lista usando sum().",
+      "codeSnippet": "def suma_lista(lista):\n    # Completa aquí\n    pass",
+      "correctAnswer": "def suma_lista(lista):\n    return sum(lista)",
+      "expectedOutput": "suma_lista([1, 2, 3]) → 6",
+      "defaultExplanation": "La función sum() toma una lista y devuelve la suma de todos sus elementos.",
+      "hint": "Usa: return sum(lista)",
+      "coinReward": 10
+    },
+    {
+      "id": "b_52",
+      "difficulty": "basic",
+      "type": "coding",
+      "question": "COMPLETA el código para clasificar un número como positivo, negativo o cero.",
+      "codeSnippet": "if numero > 0:\n    print('Positivo')\nelif numero < 0:\n    print('Negativo')\nelse:\n    print('Cero')",
+      "correctAnswer": "if numero > 0:\n    print('Positivo')\nelif numero < 0:\n    print('Negativo')\nelse:\n    print('Cero')",
+      "expectedOutput": "numero=5 → 'Positivo', numero=-3 → 'Negativo', numero=0 → 'Cero'",
+      "defaultExplanation": "Usa if/elif/else para los tres casos: mayor que 0, menor que 0, o igual a 0.",
+      "hint": "Tres casos: > 0, < 0, == 0.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_53",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "Selecciona el código CORRECTO para imprimir los números del 1 al 10 (uno por línea):",
+      "codeSnippet": "# Resultado esperado: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
+      "options": [
+        "for i in range(1, 10):\n    print(i)",
+        "for i in range(1, 11):\n    print(i)",
+        "for i in range(10):\n    print(i)",
+        "for i in [1, 10]:\n    print(i)"
+      ],
+      "correctAnswer": "for i in range(1, 11):\n    print(i)",
+      "defaultExplanation": "range(1, 11) genera números desde 1 hasta 10 (el 11 NO está incluido). Las otras opciones imprimen 1-9, 0-9, o solo 1 y 10.",
+      "hint": "El límite superior en range() no está incluido.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_54",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "Selecciona el código CORRECTO para convertir texto a MAYÚSCULAS:",
+      "codeSnippet": "texto = 'hola'\n# ¿Qué código convierte a mayúsculas?",
+      "options": [
+        "print(texto.upper())",
+        "print(texto.lower())",
+        "print(texto.capitalize())",
+        "print(texto.title())"
+      ],
+      "correctAnswer": "print(texto.upper())",
+      "defaultExplanation": ".upper() convierte todo el texto a mayúsculas. .lower() a minúsculas, .capitalize() solo la primera letra, .title() cada palabra.",
+      "hint": "upper() significa 'superior' en inglés (mayúsculas).",
+      "coinReward": 10
+    },
+    {
+      "id": "b_55",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "Selecciona el código CORRECTO para agregar un elemento a una lista:",
+      "codeSnippet": "mi_lista = [1, 2]\n# Agrega el elemento 3 al final",
+      "options": [
+        "mi_lista.append(3)",
+        "mi_lista.add(3)",
+        "mi_lista.insert(3)",
+        "mi_lista.push(3)"
+      ],
+      "correctAnswer": "mi_lista.append(3)",
+      "defaultExplanation": ".append() agrega un elemento al final de la lista. .add() es para sets, .insert() necesita índice, .push() no existe en Python.",
+      "hint": "append significa 'agregar' en inglés.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_56",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "Selecciona la expresión CORRECTA para calcular el CUADRADO de un número:",
+      "codeSnippet": "n = 5\n# ¿Qué expresión calcula n al cuadrado?",
+      "options": [
+        "n ** 2",
+        "n * 2",
+        "n ^ 2",
+        "n.squared()"
+      ],
+      "correctAnswer": "n ** 2",
+      "defaultExplanation": "** es el operador de potencia en Python. n ** 2 = n al cuadrado. n * 2 = n por 2. ^ es XOR, no potencia.",
+      "hint": "** es potencia en Python.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_57",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "Selecciona el código CORRECTO para imprimir el ÚLTIMO elemento de una lista:",
+      "codeSnippet": "lista = [10, 20, 30]\n# Imprime el último elemento (30)",
+      "options": [
+        "print(lista[-1])",
+        "print(lista[0])",
+        "print(lista[last])",
+        "print(lista.end())"
+      ],
+      "correctAnswer": "print(lista[-1])",
+      "defaultExplanation": "En Python, índice -1 accede al último elemento. [0] es el primero. [last] y .end() no existen.",
+      "hint": "Índice negativo -1 es el último.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_58",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "Selecciona el método CORRECTO para contar apariciones de un carácter:",
+      "codeSnippet": "texto = 'casa'\n# ¿Qué método cuenta las 'a'?",
+      "options": [
+        "texto.count('a')",
+        "texto.len('a')",
+        "texto.size('a')",
+        "texto.index('a')"
+      ],
+      "correctAnswer": "texto.count('a')",
+      "defaultExplanation": ".count() cuenta las ocurrencias de un elemento. .len() no existe (es función). .size() no existe. .index() devuelve la posición.",
+      "hint": "count significa 'contar' en inglés.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_59",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "Selecciona el código CORRECTO para eliminar el PRIMER elemento de una lista:",
+      "codeSnippet": "lista = [1, 2, 3]\n# Elimina el primer elemento (1)",
+      "options": [
+        "lista.pop(0)",
+        "lista.pop()",
+        "lista.remove(0)",
+        "lista.delete(0)"
+      ],
+      "correctAnswer": "lista.pop(0)",
+      "defaultExplanation": ".pop(0) elimina el elemento en índice 0 (primero). .pop() sin argumentos elimina el último. .remove(0) elimina el valor 0, no el índice.",
+      "hint": "pop(0) elimina por índice 0.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_60",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "Selecciona la función CORRECTA para obtener el MAYOR de dos números:",
+      "codeSnippet": "a = 5\nb = 10\n# ¿Qué función devuelve el mayor?",
+      "options": [
+        "max(a, b)",
+        "min(a, b)",
+        "greater(a, b)",
+        "maximum(a, b)"
+      ],
+      "correctAnswer": "max(a, b)",
+      "defaultExplanation": "max() devuelve el mayor de los valores. min() devuelve el menor. greater() y maximum() no existen en Python.",
+      "hint": "max significa 'máximo' en inglés.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_61",
+      "difficulty": "basic",
+      "type": "coding",
+      "question": "CORRIGE el error: No se puede sumar un string con un entero directamente.",
+      "codeSnippet": "resultado = '10' + 5",
+      "correctAnswer": "resultado = int('10') + 5",
+      "expectedOutput": "15",
+      "defaultExplanation": "Debes convertir el string '10' a entero con int() antes de sumar.",
+      "hint": "int('10') + 5",
+      "coinReward": 10
+    },
+    {
+      "id": "b_62",
+      "difficulty": "basic",
+      "type": "coding",
+      "question": "ESCRIBE un f-string para imprimir 'Hola Ana' usando la variable nombre.",
+      "codeSnippet": "nombre = 'Ana'\n# Imprime: Hola Ana",
+      "correctAnswer": "print(f'Hola {nombre}')",
+      "expectedOutput": "Hola Ana",
+      "defaultExplanation": "Los f-strings permiten insertar variables dentro de strings usando {variable}.",
+      "hint": "f'Hola {nombre}'",
+      "coinReward": 10
+    },
+    {
+      "id": "b_63",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué valor tiene x después de ejecutar este código?",
+      "codeSnippet": "x = 10\nx += 5",
+      "options": [
+        "10",
+        "5",
+        "15",
+        "Error"
+      ],
+      "correctAnswer": "15",
+      "defaultExplanation": "x += 5 es equivalente a x = x + 5. Entonces x = 10 + 5 = 15.",
+      "hint": "Suma 5 a x.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_64",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "Completa el f-string para imprimir 'Hola Juan':",
+      "codeSnippet": "nombre = 'Juan'\nprint(f'Hola {___}')",
+      "options": [
+        "nombre",
+        "Juan",
+        "f-string",
+        "variable"
+      ],
+      "correctAnswer": "nombre",
+      "defaultExplanation": "Dentro de un f-string, usa {nombre} para insertar el valor de la variable.",
+      "hint": "El nombre de la variable.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_65",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué error de sintaxis tiene este código?\n\nwhile True\n    print('Infinito')",
+      "codeSnippet": "while True\n    print('Infinito')",
+      "options": [
+        "Faltan dos puntos (:) después de True",
+        "True debe escribirse en minúscula",
+        "La palabra while no existe en Python",
+        "El print debe ir fuera del bucle"
+      ],
+      "correctAnswer": "Faltan dos puntos (:) después de True",
+      "defaultExplanation": "En Python, todas las estructuras de control (while, if, for, def) deben terminar con dos puntos (:).",
+      "hint": "Mira el final de la línea del while.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_66",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué tipo de dato es [1, 2, 3]?",
+      "codeSnippet": "type([1, 2, 3])",
+      "options": [
+        "<class 'tuple'>",
+        "<class 'list'>",
+        "<class 'dict'>",
+        "<class 'set'>"
+      ],
+      "correctAnswer": "<class 'list'>",
+      "defaultExplanation": "Los corchetes [] se usan para definir listas en Python.",
+      "hint": "Es una estructura ordenada y mutable.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_67",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "Completa el código para salir del bucle cuando se cumpla la condición:",
+      "codeSnippet": "while True:\n    if condicion:\n        ___  # Sale del bucle",
+      "options": [
+        "break",
+        "stop",
+        "exit",
+        "end"
+      ],
+      "correctAnswer": "break",
+      "defaultExplanation": "break es la palabra clave en Python para terminar inmediatamente un bucle.",
+      "hint": "Significa 'romper' en inglés.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_68",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Por qué falla esta línea de código?\n\nresultado = '10' + 5",
+      "codeSnippet": "resultado = '10' + 5",
+      "options": [
+        "Porque '10' es un string y 5 es un entero",
+        "Porque falta un punto entre ellos",
+        "Porque Python no permite sumar números",
+        "Porque el símbolo + no es válido"
+      ],
+      "correctAnswer": "Porque '10' es un string y 5 es un entero",
+      "defaultExplanation": "Python no permite sumar directamente tipos diferentes. Debes convertir: int('10') + 5.",
+      "hint": "Los tipos deben ser compatibles.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_69",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué resultado devuelve esta comparación?",
+      "codeSnippet": "5 == '5'",
+      "options": [
+        "True (son iguales)",
+        "False (son tipos diferentes)",
+        "None (no hay valor)",
+        "Error (no se pueden comparar)"
+      ],
+      "correctAnswer": "False (son tipos diferentes)",
+      "defaultExplanation": "5 es entero y '5' es string. En Python, tipos diferentes nunca son iguales con ==.",
+      "hint": "Compara tipo y valor.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_70",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "Completa la instrucción para importar el módulo math:",
+      "codeSnippet": "___ math",
+      "options": [
+        "import",
+        "get",
+        "using",
+        "include"
+      ],
+      "correctAnswer": "import",
+      "defaultExplanation": "En Python se usa 'import' para traer módulos externos.",
+      "hint": "Significa 'importar' en inglés.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_71",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué error tiene este código?\n\nif 10 > 5:\nprint('Mayor')",
+      "codeSnippet": "if 10 > 5:\nprint('Mayor')",
+      "options": [
+        "Falta indentación (4 espacios) en el print",
+        "Faltan paréntesis en la condición",
+        "El 10 debe ir entre comillas",
+        "No hay error, está correcto"
+      ],
+      "correctAnswer": "Falta indentación (4 espacios) en el print",
+      "defaultExplanation": "En Python, el código dentro de un if debe estar indentado (generalmente 4 espacios).",
+      "hint": "El print debe estar desplazado a la derecha.",
+      "coinReward": 10
+    },
+    {
+      "id": "b_72",
+      "difficulty": "basic",
+      "type": "multipleChoice",
+      "question": "¿Qué hace el operador != ?",
+      "codeSnippet": "5 != 3  # ¿Qué devuelve?",
+      "options": [
+        "Verifica si dos valores son iguales",
+        "Asigna un valor negativo",
+        "Verifica si dos valores son diferentes",
+        "No existe en Python"
+      ],
+      "correctAnswer": "Verifica si dos valores son diferentes",
+      "defaultExplanation": "!= es el operador de desigualdad. Devuelve True si los valores son distintos.",
+      "hint": "Es lo contrario de ==.",
+      "coinReward": 10
+    },
+    {
+      "id": "reto_basic_1",
+      "difficulty": "basic",
+      "type": "coding",
+      "question": "RETO: Escribe una función que devuelva el doble de un número",
+      "codeSnippet": "def doble(n):\n    # Completa aquí\n    pass",
+      "correctAnswer": "def doble(n):\n    return n * 2",
+      "expectedOutput": "doble(5) → 10",
+      "defaultExplanation": "La función debe retornar el valor multiplicado por 2.",
+      "hint": "Usa: return n * 2",
+      "coinReward": 10,
+      "isChallenge": true
+    },
+    {
+      "id": "reto_basic_2",
+      "difficulty": "basic",
+      "type": "coding",
+      "question": "RETO: Cuenta cuántas vocales hay en un texto",
+      "codeSnippet": "def contar_vocales(texto):\n    # Completa aquí\n    pass",
+      "correctAnswer": "def contar_vocales(texto):\n    vocales = 'aeiouAEIOU'\n    return sum(1 for c in texto if c in vocales)",
+      "expectedOutput": "contar_vocales('hola') → 2",
+      "defaultExplanation": "Itera sobre cada carácter y cuenta si está en las vocales.",
+      "hint": "Usa: sum(1 for c in texto if c in vocales)",
+      "coinReward": 10,
+      "isChallenge": true
+    },
+    {
+      "id": "reto_basic_3",
+      "difficulty": "basic",
+      "type": "coding",
+      "question": "RETO: Invierte una lista sin usar reverse()",
+      "codeSnippet": "def invertir(lista):\n    # Completa aquí\n    pass",
+      "correctAnswer": "def invertir(lista):\n    return lista[::-1]",
+      "expectedOutput": "invertir([1,2,3]) → [3,2,1]",
+      "defaultExplanation": "El slicing [::-1] invierte la lista.",
+      "hint": "Usa: lista[::-1]",
+      "coinReward": 10,
+      "isChallenge": true
+    },
+    {
+      "id": "reto_basic_4",
+      "difficulty": "basic",
+      "type": "coding",
+      "question": "RETO: Verifica si un número es par",
+      "codeSnippet": "def es_par(n):\n    # Completa aquí\n    pass",
+      "correctAnswer": "def es_par(n):\n    return n % 2 == 0",
+      "expectedOutput": "es_par(4) → True, es_par(5) → False",
+      "defaultExplanation": "Un número es par si el residuo de dividir por 2 es 0.",
+      "hint": "Usa: n % 2 == 0",
+      "coinReward": 10,
+      "isChallenge": true
+    },
+    {
+      "id": "reto_basic_5",
+      "difficulty": "basic",
+      "type": "coding",
+      "question": "RETO: Suma todos los elementos de una lista",
+      "codeSnippet": "def sumar_lista(lista):\n    # Completa aquí\n    pass",
+      "correctAnswer": "def sumar_lista(lista):\n    return sum(lista)",
+      "expectedOutput": "sumar_lista([1,2,3,4]) → 10",
+      "defaultExplanation": "La función sum() suma todos los elementos de un iterable.",
+      "hint": "Usa: sum(lista)",
+      "coinReward": 10,
+      "isChallenge": true
+    }
+  ],
+  "intermediate": [
+    {
+      "id": "i_1",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "¿Qué contiene la lista después de ejecutar este código?",
+      "codeSnippet": "lista = [1, 2]\nlista.extend([3, 4])",
+      "options": [
+        "[1, 2, [3, 4]]",
+        "[1, 2, 3, 4]",
+        "AttributeError",
+        "[3, 4]"
+      ],
+      "correctAnswer": "[1, 2, 3, 4]",
+      "defaultExplanation": "El método .extend() toma un iterable (como una lista) y agrega cada uno de sus elementos individualmente a la lista original. Por eso [3, 4] se 'desempaqueta' y queda [1, 2, 3, 4]. A diferencia de .append() que agregaría la lista completa como un solo elemento.",
+      "hint": ".extend() agrega los elementos uno por uno, no la lista completa.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_2",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Para capturar errores: ___ Exception as e:",
+      "options": [
+        "catch",
+        "handle",
+        "except",
+        "error"
+      ],
+      "correctAnswer": "except",
+      "defaultExplanation": "except define bloque de manejo.",
+      "hint": "Manejo errores.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_3",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Error: def duplicar(n): n * 2",
+      "options": [
+        "Falta return",
+        "n no definido",
+        "No multiplica",
+        "Faltan ()"
+      ],
+      "correctAnswer": "Falta return",
+      "defaultExplanation": "Sin return devuelve None.",
+      "hint": "Retornar.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_4",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Que genera [x for x in range(10) if x > 7]?",
+      "options": [
+        "[7, 8, 9]",
+        "[8, 9, 10]",
+        "[8, 9]",
+        "[0-7]"
+      ],
+      "correctAnswer": "[8, 9]",
+      "defaultExplanation": "range(10) va 0-9. Condicion x>7 pasa 8 y 9.",
+      "hint": "List comprehension.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_5",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Eliminar clave: diccionario.___(clave)",
+      "options": [
+        "remove",
+        "delete",
+        "pop",
+        "discard"
+      ],
+      "correctAnswer": "pop",
+      "defaultExplanation": ".pop() elimina y devuelve valor.",
+      "hint": "Metodo pop.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_6",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "¿Qué ocurre al ejecutar este código?",
+      "codeSnippet": "tupa = (1, [2, 3])\ntupa[1].append(4)\nprint(tupa)",
+      "options": [
+        "Imprime (1, [2, 3, 4])",
+        "TypeError: 'tuple' object does not support item assignment",
+        "AttributeError: 'tuple' object has no attribute 'append'",
+        "Imprime (1, [2, 3])"
+      ],
+      "correctAnswer": "Imprime (1, [2, 3, 4])",
+      "defaultExplanation": "Aunque las tuplas son inmutables, la lista interna [2, 3] SÍ es mutable. Python permite modificar el contenido de la lista dentro de la tupla sin reemplazar la tupla en sí. Por eso append(4) funciona y el resultado es (1, [2, 3, 4]).",
+      "hint": "La tupla no cambia, pero la lista interna sí puede modificarse.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_7",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Que devuelve zip([1, 2], ['a', 'b']) como lista?",
+      "options": [
+        "[[1, 2], ['a', 'b']]",
+        "[(1, 'a'), (2, 'b')]",
+        "([1, 'a'], [2, 'b'])",
+        "[1, 'a', 2, 'b']"
+      ],
+      "correctAnswer": "[(1, 'a'), (2, 'b')]",
+      "defaultExplanation": "zip() combina en tuplas.",
+      "hint": "Emparejar.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_8",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "lambda x ___ x**2",
+      "options": [
+        "=",
+        "->",
+        ":",
+        "return"
+      ],
+      "correctAnswer": ":",
+      "defaultExplanation": ": separa argumentos de expresion.",
+      "hint": "Sintaxis lambda.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_9",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Palabra para saltar iteracion?",
+      "options": [
+        "next",
+        "pass",
+        "continue",
+        "skip"
+      ],
+      "correctAnswer": "continue",
+      "defaultExplanation": "continue pasa a siguiente iteracion.",
+      "hint": "Continuar.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_10",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Error: conjunto = {1, 2, 3}; print(conjunto[0])",
+      "options": [
+        "Sets no indexables",
+        "Faltan comas",
+        "Indice [1]",
+        "No error"
+      ],
+      "correctAnswer": "Sets no indexables",
+      "defaultExplanation": "Sets desordenados no admiten indices.",
+      "hint": "Sets sin orden.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_11",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Que devuelve 'hola mundo'.title()?",
+      "options": [
+        "HOLA MUNDO",
+        "Hola Mundo",
+        "Hola mundo",
+        "hOLA mUNDO"
+      ],
+      "correctAnswer": "Hola Mundo",
+      "defaultExplanation": ".title() capitaliza cada palabra.",
+      "hint": "Capitalizar.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_12",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Intercambiar: a, b = ___, ___",
+      "options": [
+        "b, a",
+        "a, b",
+        "temp, a",
+        "b, b"
+      ],
+      "correctAnswer": "b, a",
+      "defaultExplanation": "Desempaquetado de tuplas.",
+      "hint": "Desempaquetar.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_13",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Error: dict_a = {'id': 1}; dict_b = dict_a; dict_b['id'] = 2",
+      "options": [
+        "dict_a cambia",
+        "Sintaxis",
+        "No cambia",
+        "Faltan ''"
+      ],
+      "correctAnswer": "dict_a cambia",
+      "defaultExplanation": "Es referencia, no copia.",
+      "hint": "Referencias.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_14",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Parametro con nombre antes de posicional?",
+      "options": [
+        "Funciona",
+        "SyntaxError",
+        "Ignora",
+        "Lista"
+      ],
+      "correctAnswer": "SyntaxError",
+      "defaultExplanation": "Posicionales primero.",
+      "hint": "Sintaxis.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_15",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Lanzar error: if x < 0: ___ ValueError('No negativos')",
+      "options": [
+        "throw",
+        "error",
+        "raise",
+        "stop"
+      ],
+      "correctAnswer": "raise",
+      "defaultExplanation": "raise fuerza excepcion.",
+      "hint": "Lanzar.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_16",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Error: nums = [1, 2, 3, 4, 5]; sub = nums[1:4]",
+      "options": [
+        "Fuera rango",
+        "sub es [2, 3, 4]",
+        "No slicing",
+        "Falta numero"
+      ],
+      "correctAnswer": "sub es [2, 3, 4]",
+      "defaultExplanation": "Slicing [1:4] toma indice 1 hasta 4 NO incluido.",
+      "hint": "Slicing.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_17",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Resultado: True and False or True?",
+      "options": [
+        "True",
+        "False",
+        "None",
+        "Error"
+      ],
+      "correctAnswer": "True",
+      "defaultExplanation": "and antes que or. (True and False)=False; (False or True)=True.",
+      "hint": "Precedencia.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_18",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Usar variable global: def func(): ___ x",
+      "options": [
+        "var",
+        "extern",
+        "global",
+        "public"
+      ],
+      "correctAnswer": "global",
+      "defaultExplanation": "global permite modificar variable externa.",
+      "hint": "Global.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_19",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Error: usuario = {'nombre': 'Ana'}; print(usuario.get('edad', 25))",
+      "options": [
+        "KeyError",
+        "No error, imprime 25",
+        "get un argumento",
+        "Faltan []"
+      ],
+      "correctAnswer": "No error, imprime 25",
+      "defaultExplanation": ".get() permite segundo argumento opcional.",
+      "hint": "Get default.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_20",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Que hace set([1, 2, 2, 3])?",
+      "options": [
+        "Lista [1,2,2,3]",
+        "Error duplicados",
+        "{1, 2, 3}",
+        "Borra lista"
+      ],
+      "correctAnswer": "{1, 2, 3}",
+      "defaultExplanation": "set elimina duplicados.",
+      "hint": "Conjunto unico.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_21",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Que hace .readlines()?",
+      "options": [
+        "Primera linea",
+        "Lista de lineas",
+        "Borra",
+        "Escribe"
+      ],
+      "correctAnswer": "Lista de lineas",
+      "defaultExplanation": "Lee todo y devuelve lista de strings.",
+      "hint": "Leer lineas.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_22",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Ejecutar despues de for normal: for i in range(3): ... ___:",
+      "options": [
+        "finally",
+        "then",
+        "else",
+        "end"
+      ],
+      "correctAnswer": "else",
+      "defaultExplanation": "else en bucle se ejecuta sin break.",
+      "hint": "For-else.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_23",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Error: def f(a, b=2, c): return a + b + c",
+      "options": [
+        "Falta return",
+        "Argumento sin default despues de default",
+        "No suma tres",
+        "No error"
+      ],
+      "correctAnswer": "Argumento sin default despues de default",
+      "defaultExplanation": "Parametros con default van al final.",
+      "hint": "Orden argumentos.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_24",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Funcion random para entero entre limites?",
+      "options": [
+        "random()",
+        "integer()",
+        "randint()",
+        "choice()"
+      ],
+      "correctAnswer": "randint()",
+      "defaultExplanation": "randint(a, b) genera entero N: a <= N <= b.",
+      "hint": "Random entero.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_25",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Lista cuadrados pares: [x**2 for x in lista ___ x % 2 == 0]",
+      "options": [
+        "when",
+        "if",
+        "where",
+        "while"
+      ],
+      "correctAnswer": "if",
+      "defaultExplanation": "if filtra elementos.",
+      "hint": "Filtro.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_26",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Error: d = {[1, 2]: 'valor'}",
+      "options": [
+        "Listas no claves",
+        "Faltan comillas",
+        "Parentesis dict",
+        "No error"
+      ],
+      "correctAnswer": "Listas no claves",
+      "defaultExplanation": "Claves deben ser inmutables.",
+      "hint": "Inmutabilidad.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_27",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Bloque que siempre se ejecuta?",
+      "options": [
+        "else",
+        "finally",
+        "catch",
+        "always"
+      ],
+      "correctAnswer": "finally",
+      "defaultExplanation": "finally se ejecuta siempre.",
+      "hint": "Siempre.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_28",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Verificar mismo objeto: if a ___ b:",
+      "options": [
+        "==",
+        "equals",
+        "is",
+        "identity"
+      ],
+      "correctAnswer": "is",
+      "defaultExplanation": "is compara identidad (ID).",
+      "hint": "Identidad.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_29",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Error: tupla = (1, 2, 3); tupla.append(4)",
+      "options": [
+        "Tuplas no append",
+        "Convertir lista",
+        "No error",
+        "Ambas A y B"
+      ],
+      "correctAnswer": "Ambas A y B",
+      "defaultExplanation": "Tuplas inmutables, convertir a lista.",
+      "hint": "Inmutable.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_30",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Que devuelve sorted([5, 2, 8, 1], key=lambda x: -x)?",
+      "options": [
+        "[1, 2, 5, 8]",
+        "[8, 5, 2, 1]",
+        "[5, 2, 8, 1]",
+        "[-1, -2, -5, -8]"
+      ],
+      "correctAnswer": "[8, 5, 2, 1]",
+      "defaultExplanation": "lambda invierte criterio.",
+      "hint": "Orden inverso.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_31",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Que devuelve .items()?",
+      "options": [
+        "Claves",
+        "Valores",
+        "Pares (clave, valor)",
+        "Numero elementos"
+      ],
+      "correctAnswer": "Pares (clave, valor)",
+      "defaultExplanation": "items() devuelve vista de tuplas.",
+      "hint": "Pares.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_32",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Indice y valor: for i, v in ___(lista):",
+      "options": [
+        "range",
+        "index",
+        "enumerate",
+        "zip"
+      ],
+      "correctAnswer": "enumerate",
+      "defaultExplanation": "enumerate() anade contador.",
+      "hint": "Enumerar.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_33",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "¿Cuál es la forma CORRECTA de formatear este string para mostrar el valor de la variable nombre?",
+      "codeSnippet": "nombre = 'Ana'",
+      "options": [
+        "print(f'Hola {nombre}')",
+        "print('Hola %s' .format(nombre))",
+        "print('Hola' + nombre())",
+        "print('Hola ' & nombre)"
+      ],
+      "correctAnswer": "print(f'Hola {nombre}')",
+      "defaultExplanation": "Las f-strings (f'...{variable}...') son la forma moderna y recomendada de formatear strings en Python 3.6+. La opción con '%s' es estilo antiguo y no usa .format(), el & no existe en Python, y nombre() intentaría llamar a una función que no existe.",
+      "hint": "Busca la sintaxis con f al inicio del string.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_34",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Que hace set_a | set_b?",
+      "options": [
+        "Interseccion",
+        "Diferencia",
+        "Union",
+        "Producto"
+      ],
+      "correctAnswer": "Union",
+      "defaultExplanation": "| une sets sin repetir.",
+      "hint": "Union.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_35",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Leer archivo completo: contenido = f.___()",
+      "options": [
+        "read",
+        "get",
+        "all",
+        "load"
+      ],
+      "correctAnswer": "read",
+      "defaultExplanation": ".read() lee todo.",
+      "hint": "Leer.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_36",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Error: saludar(nombre='Juan', 'Perez')",
+      "options": [
+        "Posicional despues de nombre",
+        "Falta return",
+        "Default mal",
+        "No error"
+      ],
+      "correctAnswer": "Posicional despues de nombre",
+      "defaultExplanation": "Argumentos con nombre van al final.",
+      "hint": "Orden args.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_37",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Que hace .reverse()?",
+      "options": [
+        "Copia invertida",
+        "Invierte in-place",
+        "Ordena",
+        "Borra ultimo"
+      ],
+      "correctAnswer": "Invierte in-place",
+      "defaultExplanation": ".reverse() modifica original.",
+      "hint": "In-place.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_38",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Tupla desde lista: t = ___(mi_lista)",
+      "options": [
+        "tuple",
+        "to_tuple",
+        "set",
+        "wrap"
+      ],
+      "correctAnswer": "tuple",
+      "defaultExplanation": "tuple() convierte iterable.",
+      "hint": "Tupla.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_39",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "¿Qué devuelve esta función al ejecutarse?",
+      "codeSnippet": "def dividir():\n    try:\n        return 10 / 2\n    except ZeroDivisionError:\n        return 'Error'\n    finally:\n        return 'Limpieza'",
+      "options": [
+        "5.0",
+        "'Error'",
+        "'Limpieza'",
+        "5.0 y luego 'Limpieza'"
+      ],
+      "correctAnswer": "'Limpieza'",
+      "defaultExplanation": "El bloque finally SIEMPRE se ejecuta, incluso si hay un return en el try o except. Si finally tiene un return, ese valor sobrescribe cualquier otro return anterior. Por eso la función devuelve 'Limpieza' en vez de 5.0. Esto es considerado mala práctica porque hace el código difícil de entender.",
+      "hint": "El finally con return gana sobre los demás.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_40",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Resultado de 'manzana,pera,uva'.split(',')?",
+      "options": [
+        "('manzana', 'pera', 'uva')",
+        "['manzana', 'pera', 'uva']",
+        "{'manzana', 'pera', 'uva'}",
+        "'manzana pera uva'"
+      ],
+      "correctAnswer": "['manzana', 'pera', 'uva']",
+      "defaultExplanation": ".split() devuelve lista.",
+      "hint": "Lista.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_41",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Resultado: [x if x > 2 else 0 for x in [1, 2, 3, 4]]?",
+      "options": [
+        "[3, 4]",
+        "[0, 0, 3, 4]",
+        "[1, 2, 0, 0]",
+        "Error"
+      ],
+      "correctAnswer": "[0, 0, 3, 4]",
+      "defaultExplanation": "if-else en comprehension.",
+      "hint": "Comprension condicional.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_42",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Importar solo sqrt: ___ math import sqrt",
+      "options": [
+        "import",
+        "from",
+        "using",
+        "get"
+      ],
+      "correctAnswer": "from",
+      "defaultExplanation": "from modulo import funcion.",
+      "hint": "From.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_43",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Error: for k, v in precios:",
+      "options": [
+        "Faltan :",
+        "Falta .items()",
+        "No iterar dict",
+        "k,v una variable"
+      ],
+      "correctAnswer": "Falta .items()",
+      "defaultExplanation": "Iterar directamente da solo claves.",
+      "hint": "Items.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_44",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Que devuelve: x = [1]; y = [1]; x is y?",
+      "options": [
+        "True",
+        "False",
+        "None",
+        "Error"
+      ],
+      "correctAnswer": "False",
+      "defaultExplanation": "Son listas distintas en memoria.",
+      "hint": "Identidad.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_45",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Funcion no haga nada: def mi_funcion(): ___",
+      "options": [
+        "stop",
+        "null",
+        "pass",
+        "end"
+      ],
+      "correctAnswer": "pass",
+      "defaultExplanation": "pass es operacion nula.",
+      "hint": "Pass.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_46",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Error: try/finally/except",
+      "options": [
+        "Falta try",
+        "except antes que finally",
+        "Finally no codigo",
+        "No error"
+      ],
+      "correctAnswer": "except antes que finally",
+      "defaultExplanation": "Orden: try -> except -> finally.",
+      "hint": "Orden.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_47",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Que hace 'Python'.startswith('py')?",
+      "options": [
+        "True",
+        "False",
+        "Minusculas",
+        "Error"
+      ],
+      "correctAnswer": "False",
+      "defaultExplanation": "Distingue mayusculas.",
+      "hint": "Case sensitive.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_48",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Completa la sintaxis de comprensión de conjunto para obtener las letras únicas de una palabra:\n\ns = {letra ___ letra in 'palabra'}",
+      "options": [
+        "in",
+        "for",
+        "each",
+        "with"
+      ],
+      "correctAnswer": "for",
+      "defaultExplanation": "Las comprensiones de conjunto (set comprehensions) usan la sintaxis {expresion for variable in iterable}. Esto crea un conjunto con los elementos únicos del iterable.",
+      "hint": "Es una palabra clave que indica iteración sobre una secuencia.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_49",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Error: item = lista.remove(10); print(item)",
+      "options": [
+        "Imprime 10",
+        "Imprime None",
+        "ValueError",
+        "No remover 10"
+      ],
+      "correctAnswer": "Imprime None",
+      "defaultExplanation": ".remove() no devuelve valor.",
+      "hint": "Remove None.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_50",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Que devuelve type(lambda x: x)?",
+      "options": [
+        "<class 'function'>",
+        "<class 'lambda'>",
+        "<class 'object'>",
+        "<class 'str'>"
+      ],
+      "correctAnswer": "<class 'function'>",
+      "defaultExplanation": "Lambda es function.",
+      "hint": "Function.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_51",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Que imprime: print('-'.join(['a', 'b', 'c']))?",
+      "options": [
+        "a-b-c",
+        "abc-",
+        "-abc",
+        "Error"
+      ],
+      "correctAnswer": "a-b-c",
+      "defaultExplanation": ".join() une elementos con el separador.",
+      "hint": "Join con separador.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_52",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Recorrer dos listas: for nombre, edad in ___(nombres, edades):",
+      "options": [
+        "combine",
+        "zip",
+        "join",
+        "pair"
+      ],
+      "correctAnswer": "zip",
+      "defaultExplanation": "zip() empareja elementos de iterables.",
+      "hint": "Emparejar.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_53",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Error: lista = [1, 2, 3]; for i in lista: lista.append(i)",
+      "options": [
+        "Falta indentacion",
+        "Sintaxis",
+        "Bucle infinito",
+        "No error"
+      ],
+      "correctAnswer": "Bucle infinito",
+      "defaultExplanation": "Modificar lista mientras iteras causa bucle infinito.",
+      "hint": "Modificar iterando.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_54",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Que devuelve 'Python'[::-1]?",
+      "options": [
+        "'P'",
+        "'nohtyP'",
+        "'Python'",
+        "'n'"
+      ],
+      "correctAnswer": "'nohtyP'",
+      "defaultExplanation": "Slicing con paso -1 invierte string.",
+      "hint": "Invertir.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_55",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Argumentos variables posicionales: def func(____):",
+      "options": [
+        "*args",
+        "**kwargs",
+        "args[]",
+        "..."
+      ],
+      "correctAnswer": "*args",
+      "defaultExplanation": "*args recibe tupla de argumentos.",
+      "hint": "Args.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_56",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Error: def mi_func(val, lista=[]): lista.append(val)",
+      "options": [
+        "Falta return",
+        "Default mutable",
+        "Tipo",
+        "No error"
+      ],
+      "correctAnswer": "Default mutable",
+      "defaultExplanation": "Lista default se comparte entre llamadas.",
+      "hint": "Mutable default.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_57",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Diferencia principal entre Lista y Set?",
+      "options": [
+        "Set ordenado",
+        "Set sin duplicados",
+        "Lista rapida",
+        "No diferencia"
+      ],
+      "correctAnswer": "Set sin duplicados",
+      "defaultExplanation": "Set es coleccion desordenada de elementos unicos.",
+      "hint": "Unicos.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_58",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Obtener valor sin error: dict.____('clave', 'default')",
+      "options": [
+        "fetch",
+        "get",
+        "find",
+        "search"
+      ],
+      "correctAnswer": "get",
+      "defaultExplanation": ".get() permite valor default.",
+      "hint": "Get default.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_59",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Error: x = 10; def suma(): x = x + 5",
+      "options": [
+        "UnboundLocalError",
+        "Sintaxis",
+        "x string",
+        "No error"
+      ],
+      "correctAnswer": "UnboundLocalError",
+      "defaultExplanation": "Necesita declarar global x.",
+      "hint": "Global.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_60",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Que hace .strip() en string?",
+      "options": [
+        "Corta mitad",
+        "Elimina espacios extremos",
+        "Minusculas",
+        "Reemplaza"
+      ],
+      "correctAnswer": "Elimina espacios extremos",
+      "defaultExplanation": ".strip() limpia espacios de extremos.",
+      "hint": "Limpiar.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_61",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Sintaxis correcta de lambda que suma dos numeros?",
+      "options": [
+        "lambda x, y: x + y",
+        "lambda(x, y) = x + y",
+        "def lambda x, y: x + y",
+        "lambda x, y -> x + y"
+      ],
+      "correctAnswer": "lambda x, y: x + y",
+      "defaultExplanation": "Lambda usa : para expresion unica.",
+      "hint": "Lambda sintaxis.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_62",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Cerrar archivo automaticamente: ___ open('datos.txt', 'r') as f:",
+      "options": [
+        "using",
+        "with",
+        "open",
+        "file"
+      ],
+      "correctAnswer": "with",
+      "defaultExplanation": "with es context manager.",
+      "hint": "Context manager.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_63",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Error: cuadrados = {x: x*x for x in range(5)}",
+      "options": [
+        "Es lista",
+        "Falta dict",
+        "No error",
+        "range mal"
+      ],
+      "correctAnswer": "No error",
+      "defaultExplanation": "Dictionary comprehension valido.",
+      "hint": "Dict comprehension.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_64",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Modo en open() para añadir sin borrar?",
+      "options": [
+        "'w'",
+        "'r'",
+        "'a'",
+        "'x'"
+      ],
+      "correctAnswer": "'a'",
+      "defaultExplanation": "Modo 'a' (append) añade al final.",
+      "hint": "Append.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_65",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Argumentos con nombre variables: def func(____):",
+      "options": [
+        "*args",
+        "**kwargs",
+        "dict",
+        "params"
+      ],
+      "correctAnswer": "**kwargs",
+      "defaultExplanation": "**kwargs recibe dict de argumentos.",
+      "hint": "Kwargs.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_66",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Error: try: res = 10 / 0 except: print('Error')",
+      "options": [
+        "Falta finally",
+        "Except vacio",
+        "No error",
+        "try solo"
+      ],
+      "correctAnswer": "Except vacio",
+      "defaultExplanation": "Except sin tipo es mala practica.",
+      "hint": "Tipo error.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_67",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Funcion que se llama a si misma?",
+      "options": [
+        "Bucle infinito",
+        "Espejo",
+        "Recursion",
+        "Auto-funcion"
+      ],
+      "correctAnswer": "Recursion",
+      "defaultExplanation": "Recursividad llama funcion con casos menores.",
+      "hint": "Recursivo.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_68",
+      "difficulty": "intermediate",
+      "type": "fillInTheBlank",
+      "question": "Verificar NO esta en lista: if 'a' ___ lista:",
+      "options": [
+        "not in",
+        "is not",
+        "!= in",
+        "absent"
+      ],
+      "correctAnswer": "not in",
+      "defaultExplanation": "not in verifica ausencia.",
+      "hint": "Ausencia.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_69",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Error: texto = 'Python'; texto[0] = 'p'",
+      "options": [
+        "Indentacion",
+        "TypeError str inmutable",
+        "No error",
+        "SyntaxError"
+      ],
+      "correctAnswer": "TypeError str inmutable",
+      "defaultExplanation": "Strings son inmutables.",
+      "hint": "Inmutable.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_70",
+      "difficulty": "intermediate",
+      "type": "multipleChoice",
+      "question": "Que devuelve bool([])?",
+      "options": [
+        "True",
+        "False",
+        "None",
+        "Error"
+      ],
+      "correctAnswer": "False",
+      "defaultExplanation": "Coleccion vacia es False.",
+      "hint": "Booleano vacio.",
+      "coinReward": 10
+    },
+    {
+      "id": "i_coding_1",
+      "difficulty": "intermediate",
+      "type": "coding",
+      "question": "COMPLETA: Crea una lista por comprensión con los cuadrados del 1 al 5",
+      "codeSnippet": "# Resultado esperado: [1, 4, 9, 16, 25]\ncuadrados = [x**2 for x in range(1, 6)]",
+      "correctAnswer": "[x**2 for x in range(1, 6)]",
+      "expectedOutput": "[1, 4, 9, 16, 25]",
+      "defaultExplanation": "Las list comprehensions permiten crear listas de forma concisa. x**2 calcula el cuadrado.",
+      "hint": "Usa: [x**2 for x in range(1, 6)]",
+      "coinReward": 10
+    },
+    {
+      "id": "i_coding_2",
+      "difficulty": "intermediate",
+      "type": "coding",
+      "question": "COMPLETA: Filtra solo los números pares de una lista",
+      "codeSnippet": "numeros = [1, 2, 3, 4, 5, 6]\npares = [x for x in numeros if x % 2 == 0]",
+      "correctAnswer": "[x for x in numeros if x % 2 == 0]",
+      "expectedOutput": "[2, 4, 6]",
+      "defaultExplanation": "La condición 'if x % 2 == 0' filtra solo los números divisibles por 2.",
+      "hint": "Usa: if x % 2 == 0",
+      "coinReward": 10
+    },
+    {
+      "id": "i_coding_3",
+      "difficulty": "intermediate",
+      "type": "coding",
+      "question": "COMPLETA: Convierte una lista de strings a mayúsculas",
+      "codeSnippet": "palabras = ['hola', 'mundo']\nmayusculas = [p.upper() for p in palabras]",
+      "correctAnswer": "[p.upper() for p in palabras]",
+      "expectedOutput": "['HOLA', 'MUNDO']",
+      "defaultExplanation": "El método .upper() convierte cada string a mayúsculas.",
+      "hint": "Usa: p.upper()",
+      "coinReward": 10
+    },
+    {
+      "id": "i_coding_4",
+      "difficulty": "intermediate",
+      "type": "coding",
+      "question": "COMPLETA: Crea un diccionario con comprensión",
+      "codeSnippet": "# {1: 1, 2: 4, 3: 9}\ncuadrados = {x: x**2 for x in range(1, 4)}",
+      "correctAnswer": "{x: x**2 for x in range(1, 4)}",
+      "expectedOutput": "{1: 1, 2: 4, 3: 9}",
+      "defaultExplanation": "Las dict comprehensions usan {clave: valor for ...}.",
+      "hint": "Usa: {x: x**2 for x in range(1, 4)}",
+      "coinReward": 10
+    },
+    {
+      "id": "i_coding_5",
+      "difficulty": "intermediate",
+      "type": "coding",
+      "question": "COMPLETA: Usa la función map() para convertir a enteros",
+      "codeSnippet": "strings = ['1', '2', '3']\nenteros = list(map(int, strings))",
+      "correctAnswer": "list(map(int, strings))",
+      "expectedOutput": "[1, 2, 3]",
+      "defaultExplanation": "map(func, iterable) aplica func a cada elemento del iterable.",
+      "hint": "Usa: map(int, strings)",
+      "coinReward": 10
+    },
+    {
+      "id": "i_coding_6",
+      "difficulty": "intermediate",
+      "type": "coding",
+      "question": "COMPLETA: Ordena una lista de tuplas por el segundo elemento",
+      "codeSnippet": "lista = [(1, 3), (2, 1), (3, 2)]\nordenada = sorted(lista, key=lambda x: x[1])",
+      "correctAnswer": "sorted(lista, key=lambda x: x[1])",
+      "expectedOutput": "[(2, 1), (3, 2), (1, 3)]",
+      "defaultExplanation": "sorted() con key=lambda permite ordenar por cualquier criterio.",
+      "hint": "Usa: key=lambda x: x[1]",
+      "coinReward": 10
+    },
+    {
+      "id": "i_coding_7",
+      "difficulty": "intermediate",
+      "type": "coding",
+      "question": "COMPLETA: Usa filter() para obtener solo positivos",
+      "codeSnippet": "numeros = [-2, -1, 0, 1, 2, 3]\npositivos = list(filter(lambda x: x > 0, numeros))",
+      "correctAnswer": "list(filter(lambda x: x > 0, numeros))",
+      "expectedOutput": "[1, 2, 3]",
+      "defaultExplanation": "filter(func, iterable) devuelve solo los elementos donde func devuelve True.",
+      "hint": "Usa: x > 0",
+      "coinReward": 10
+    },
+    {
+      "id": "i_coding_8",
+      "difficulty": "intermediate",
+      "type": "coding",
+      "question": "COMPLETA: Reduce una lista a un solo valor (suma)",
+      "codeSnippet": "from functools import reduce\nnumeros = [1, 2, 3, 4]\nsuma = reduce(lambda x, y: x + y, numeros)",
+      "correctAnswer": "reduce(lambda x, y: x + y, numeros)",
+      "expectedOutput": "10",
+      "defaultExplanation": "reduce() aplica acumulativamente la función a los elementos.",
+      "hint": "Usa: lambda x, y: x + y",
+      "coinReward": 10
+    },
+    {
+      "id": "i_coding_9",
+      "difficulty": "intermediate",
+      "type": "coding",
+      "question": "COMPLETA: Crea una función lambda que multiplique por 2",
+      "codeSnippet": "duplicar = lambda x: x * 2\nresultado = duplicar(5)",
+      "correctAnswer": "lambda x: x * 2",
+      "expectedOutput": "10",
+      "defaultExplanation": "Las lambda son funciones anónimas de una línea.",
+      "hint": "Usa: lambda x: x * 2",
+      "coinReward": 10
+    },
+    {
+      "id": "i_coding_10",
+      "difficulty": "intermediate",
+      "type": "coding",
+      "question": "COMPLETA: Usa zip() para combinar dos listas",
+      "codeSnippet": "nombres = ['a', 'b']\nedades = [1, 2]\ncombinado = list(zip(nombres, edades))",
+      "correctAnswer": "list(zip(nombres, edades))",
+      "expectedOutput": "[('a', 1), ('b', 2)]",
+      "defaultExplanation": "zip() combina elementos de múltiples iterables en tuplas.",
+      "hint": "Usa: zip(nombres, edades)",
+      "coinReward": 10
+    },
+    {
+      "id": "reto_int_1",
+      "difficulty": "intermediate",
+      "type": "coding",
+      "question": "RETO: Crea una lista con los cuadrados solo de los pares",
+      "codeSnippet": "def cuadrados_pares(n):\n    # Completa aquí\n    pass",
+      "correctAnswer": "def cuadrados_pares(n):\n    return [x**2 for x in range(n) if x % 2 == 0]",
+      "expectedOutput": "cuadrados_pares(10) → [0, 4, 16, 36, 64]",
+      "defaultExplanation": "List comprehension con filtro para solo pares.",
+      "hint": "Usa: [x**2 for x in range(n) if x % 2 == 0]",
+      "coinReward": 10,
+      "isChallenge": true
+    },
+    {
+      "id": "reto_int_2",
+      "difficulty": "intermediate",
+      "type": "coding",
+      "question": "RETO: Encuentra el elemento más repetido en una lista",
+      "codeSnippet": "def mas_repetido(lista):\n    # Completa aquí\n    pass",
+      "correctAnswer": "def mas_repetido(lista):\n    return max(set(lista), key=lista.count)",
+      "expectedOutput": "mas_repetido([1,2,2,3,2]) → 2",
+      "defaultExplanation": "max() con key=count encuentra el elemento que más se repite.",
+      "hint": "Usa: max(set(lista), key=lista.count)",
+      "coinReward": 10,
+      "isChallenge": true
+    },
+    {
+      "id": "reto_int_3",
+      "difficulty": "intermediate",
+      "type": "coding",
+      "question": "RETO: Convierte una lista de strings a enteros",
+      "codeSnippet": "def a_enteros(strings):\n    # Completa aquí\n    pass",
+      "correctAnswer": "def a_enteros(strings):\n    return list(map(int, strings))",
+      "expectedOutput": "a_enteros(['1','2','3']) → [1,2,3]",
+      "defaultExplanation": "map() aplica int() a cada elemento del iterable.",
+      "hint": "Usa: list(map(int, strings))",
+      "coinReward": 10,
+      "isChallenge": true
+    },
+    {
+      "id": "reto_int_4",
+      "difficulty": "intermediate",
+      "type": "coding",
+      "question": "RETO: Fusiona dos diccionarios",
+      "codeSnippet": "def fusionar(d1, d2):\n    # Completa aquí\n    pass",
+      "correctAnswer": "def fusionar(d1, d2):\n    return {**d1, **d2}",
+      "expectedOutput": "fusionar({'a':1}, {'b':2}) → {'a':1, 'b':2}",
+      "defaultExplanation": "El unpacking ** combina diccionarios.",
+      "hint": "Usa: {**d1, **d2}",
+      "coinReward": 10,
+      "isChallenge": true
+    },
+    {
+      "id": "reto_int_5",
+      "difficulty": "intermediate",
+      "type": "coding",
+      "question": "RETO: Filtra palabras que empiezan con mayúscula",
+      "codeSnippet": "def mayusculas(palabras):\n    # Completa aquí\n    pass",
+      "correctAnswer": "def mayusculas(palabras):\n    return [p for p in palabras if p[0].isupper()]",
+      "expectedOutput": "mayusculas(['hola', 'Mundo', 'Python']) → ['Mundo', 'Python']",
+      "defaultExplanation": "isupper() verifica si la primera letra es mayúscula.",
+      "hint": "Usa: p[0].isupper()",
+      "coinReward": 10,
+      "isChallenge": true
+    }
+  ],
+  "advanced": [
+    {
+      "id": "a_1",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Que representa self en un metodo?",
+      "options": [
+        "Palabra reservada",
+        "Instancia del objeto",
+        "Referencia al padre",
+        "Nombre global"
+      ],
+      "correctAnswer": "Instancia del objeto",
+      "defaultExplanation": "self accede a atributos de instancia.",
+      "hint": "Instancia actual.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_2",
+      "difficulty": "advanced",
+      "type": "fillInTheBlank",
+      "question": "Inicializar atributos: def ___(self):",
+      "options": [
+        "init",
+        "__init__",
+        "start",
+        "__new__"
+      ],
+      "correctAnswer": "__init__",
+      "defaultExplanation": "__init__ es constructor.",
+      "hint": "Constructor.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_3",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Error: @mi_decorador\\ndef saludo(): print('Hola')",
+      "options": [
+        "Faltan ()",
+        "Decorador antes",
+        "No sin args",
+        "No error"
+      ],
+      "correctAnswer": "Decorador antes",
+      "defaultExplanation": "Decorador debe existir antes.",
+      "hint": "Orden definicion.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_4",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Palabra para generador?",
+      "options": [
+        "generator",
+        "return",
+        "yield",
+        "next"
+      ],
+      "correctAnswer": "yield",
+      "defaultExplanation": "yield pausa y retorna.",
+      "hint": "Pausa.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_5",
+      "difficulty": "advanced",
+      "type": "fillInTheBlank",
+      "question": "Lamar padre: ___(self).metodo()",
+      "options": [
+        "parent",
+        "father",
+        "super()",
+        "base"
+      ],
+      "correctAnswer": "super()",
+      "defaultExplanation": "super() devuelve superclase.",
+      "hint": "Superclase.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_6",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Error: def fact(n): return n * fact(n-1)",
+      "options": [
+        "Falta caso base",
+        "Calculo mal",
+        "No recursion",
+        "Falta !"
+      ],
+      "correctAnswer": "Falta caso base",
+      "defaultExplanation": "Necesita condicion parada.",
+      "hint": "Condicion parada.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_7",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Como indicar atributo privado?",
+      "options": [
+        "private",
+        "__atributo",
+        "MAYUSCULAS",
+        "No posible"
+      ],
+      "correctAnswer": "__atributo",
+      "defaultExplanation": "__ activa Name Mangling.",
+      "hint": "Name Mangling.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_8",
+      "difficulty": "advanced",
+      "type": "fillInTheBlank",
+      "question": "Metodo de clase: @___",
+      "options": [
+        "classmethod",
+        "static",
+        "instance",
+        "global"
+      ],
+      "correctAnswer": "classmethod",
+      "defaultExplanation": "@classmethod recibe cls.",
+      "hint": "Metodo clase.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_9",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Estructura para cola FIFO?",
+      "options": [
+        "lista",
+        "deque",
+        "dict",
+        "set"
+      ],
+      "correctAnswer": "deque",
+      "defaultExplanation": "deque optimiza extremos.",
+      "hint": "Double-ended.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_10",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Error: it = iter([1, 2]); next(it); next(it); next(it)",
+      "options": [
+        "Solo una vez",
+        "StopIteration",
+        "Faltan []",
+        "No error"
+      ],
+      "correctAnswer": "StopIteration",
+      "defaultExplanation": "Iterador agotado.",
+      "hint": "Agotado.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_11",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Para que sirve @property?",
+      "options": [
+        "Como atributo",
+        "Proteger",
+        "BD",
+        "Herencia"
+      ],
+      "correctAnswer": "Como atributo",
+      "defaultExplanation": "Metodo como atributo.",
+      "hint": "Atributo calculado.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_12",
+      "difficulty": "advanced",
+      "type": "fillInTheBlank",
+      "question": "Complejidad diccionario: O(___)",
+      "options": [
+        "n",
+        "log n",
+        "1",
+        "n^2"
+      ],
+      "correctAnswer": "1",
+      "defaultExplanation": "Hash table O(1).",
+      "hint": "Constante.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_13",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Error: __add__ devuelve tupla",
+      "options": [
+        "No existe",
+        "Devolver instancia",
+        "Falta self",
+        "No suma"
+      ],
+      "correctAnswer": "Devolver instancia",
+      "defaultExplanation": "Mantener consistencia tipo.",
+      "hint": "Consistencia.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_14",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Diferencia staticmethod vs classmethod?",
+      "options": [
+        "No self/cls",
+        "Solo padre",
+        "Mas lento",
+        "No constantes"
+      ],
+      "correctAnswer": "No self/cls",
+      "defaultExplanation": "Static sin self/cls.",
+      "hint": "Sin self.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_15",
+      "difficulty": "advanced",
+      "type": "fillInTheBlank",
+      "question": "Borrar referencia: ___ variable",
+      "options": [
+        "remove",
+        "clear",
+        "del",
+        "kill"
+      ],
+      "correctAnswer": "del",
+      "defaultExplanation": "del elimina nombre.",
+      "hint": "Eliminar.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_16",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Error: if type(obj) == 'A':",
+      "options": [
+        "Comparar clase",
+        "isinstance",
+        "Ambas",
+        "Faltan ()"
+      ],
+      "correctAnswer": "Ambas",
+      "defaultExplanation": "type devuelve clase.",
+      "hint": "Comparacion tipos.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_17",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Algoritmo de .sort()?",
+      "options": [
+        "QuickSort",
+        "MergeSort",
+        "Timsort",
+        "BubbleSort"
+      ],
+      "correctAnswer": "Timsort",
+      "defaultExplanation": "Timsort hibrido.",
+      "hint": "Hibrido.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_18",
+      "difficulty": "advanced",
+      "type": "fillInTheBlank",
+      "question": "Funcion dentro de otra: ___",
+      "options": [
+        "Lambda",
+        "Nested",
+        "Closure",
+        "Decorator"
+      ],
+      "correctAnswer": "Closure",
+      "defaultExplanation": "Closure recuerda ambito.",
+      "hint": "Ambito lexico.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_19",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Error: class Cuenta: conteo = 0; def __init__(self): conteo += 1",
+      "options": [
+        "No suma",
+        "Usar Cuenta.conteo",
+        "Lista",
+        "No error"
+      ],
+      "correctAnswer": "Usar Cuenta.conteo",
+      "defaultExplanation": "Referenciar explicito.",
+      "hint": "Atributo clase.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_20",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Ventaja generador sobre lista?",
+      "options": [
+        "Mas rapido",
+        "Menos memoria",
+        "Indices -",
+        "Infinito"
+      ],
+      "correctAnswer": "Menos memoria",
+      "defaultExplanation": "Lazy evaluation.",
+      "hint": "Perezoso.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_21",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Que es MRO?",
+      "options": [
+        "Orden eliminacion",
+        "Orden busqueda metodo",
+        "Velocidad",
+        "Decorador"
+      ],
+      "correctAnswer": "Orden busqueda metodo",
+      "defaultExplanation": "C3 Linearization.",
+      "hint": "Resolucion.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_22",
+      "difficulty": "advanced",
+      "type": "fillInTheBlank",
+      "question": "Funcion asincrona: ___ def",
+      "options": [
+        "await",
+        "async",
+        "thread",
+        "yield"
+      ],
+      "correctAnswer": "async",
+      "defaultExplanation": "async crea corutina.",
+      "hint": "Corutina.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_23",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Error: def __str__(self): print()",
+      "options": [
+        "Retornar string",
+        "Falta self",
+        "No acceso",
+        "No error"
+      ],
+      "correctAnswer": "Retornar string",
+      "defaultExplanation": "__str__ usa return.",
+      "hint": "Retornar.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_24",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Esperar corutina?",
+      "options": [
+        "wait",
+        "pause",
+        "await",
+        "stop"
+      ],
+      "correctAnswer": "await",
+      "defaultExplanation": "await suspende.",
+      "hint": "Suspender.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_25",
+      "difficulty": "advanced",
+      "type": "fillInTheBlank",
+      "question": "Ahorrar memoria: __slots__ = ('___',)",
+      "options": [
+        "args",
+        "atributos",
+        "vars",
+        "keys"
+      ],
+      "correctAnswer": "atributos",
+      "defaultExplanation": "__slots__ evita __dict__.",
+      "hint": "Optimizar.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_26",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Error: def hacer_sonido(obj: Animal): obj.ladrar()",
+      "options": [
+        "No hereda",
+        "No todos ladran",
+        "Falta @",
+        "dict"
+      ],
+      "correctAnswer": "No todos ladran",
+      "defaultExplanation": "Interfaz comun requerida.",
+      "hint": "Interfaz.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_27",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Que hace functools.wraps?",
+      "options": [
+        "Mas rapido",
+        "Copia metadatos",
+        "Evita error",
+        "Generador"
+      ],
+      "correctAnswer": "Copia metadatos",
+      "defaultExplanation": "Preserva nombre/doc.",
+      "hint": "Metadatos.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_28",
+      "difficulty": "advanced",
+      "type": "fillInTheBlank",
+      "question": "Context manager: __enter__ y ___",
+      "options": [
+        "__stop__",
+        "__exit__",
+        "__close__",
+        "__end__"
+      ],
+      "correctAnswer": "__exit__",
+      "defaultExplanation": "Protocolo con with.",
+      "hint": "Contexto.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_29",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Error: busqueda binaria en desordenado",
+      "options": [
+        "Ordenado",
+        "No error",
+        "Negativos",
+        "Dict"
+      ],
+      "correctAnswer": "Ordenado",
+      "defaultExplanation": "Requiere orden.",
+      "hint": "Precondicion.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_30",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Modulo Clases Abstractas?",
+      "options": [
+        "math",
+        "abc",
+        "abstract",
+        "types"
+      ],
+      "correctAnswer": "abc",
+      "defaultExplanation": "Abstract Base Classes.",
+      "hint": "ABC.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_31",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Que es metaclase?",
+      "options": [
+        "Herencia multiple",
+        "Clase de clase",
+        "Metodo antes",
+        "Libreria"
+      ],
+      "correctAnswer": "Clase de clase",
+      "defaultExplanation": "Clase es instancia de metaclase.",
+      "hint": "Type de type.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_32",
+      "difficulty": "advanced",
+      "type": "fillInTheBlank",
+      "question": "Descriptor: __get__, __set__, ___",
+      "options": [
+        "__del__",
+        "__delete__",
+        "__remove__",
+        "__clear__"
+      ],
+      "correctAnswer": "__delete__",
+      "defaultExplanation": "Protocolo descriptor.",
+      "hint": "Descriptor.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_33",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Error: Threading para CPU-bound",
+      "options": [
+        "Solo GUI",
+        "GIL impide",
+        "Max 2 hilos",
+        "No error"
+      ],
+      "correctAnswer": "GIL impide",
+      "defaultExplanation": "GIL limita paralelismo CPU.",
+      "hint": "GIL.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_34",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Que devuelve dir(obj)?",
+      "options": [
+        "Direccion",
+        "Lista atributos/metodos",
+        "Nombre clase",
+        "Archivo"
+      ],
+      "correctAnswer": "Lista atributos/metodos",
+      "defaultExplanation": "Introspeccion.",
+      "hint": "Introspeccion.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_35",
+      "difficulty": "advanced",
+      "type": "fillInTheBlank",
+      "question": "Evitar calculos repetidos: @functools.___",
+      "options": [
+        "cache",
+        "lru_cache",
+        "memoize",
+        "Ambas"
+      ],
+      "correctAnswer": "Ambas",
+      "defaultExplanation": "Memoizacion.",
+      "hint": "Memo.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_36",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Error: lista es Array estatico",
+      "options": [
+        "Dinamico",
+        "Punteros",
+        "Solo append",
+        "No error"
+      ],
+      "correctAnswer": "Dinamico",
+      "defaultExplanation": "Redimensiona automatico.",
+      "hint": "Dinamico.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_37",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Metodo para obj()?",
+      "options": [
+        "__init__",
+        "__run__",
+        "__call__",
+        "__execute__"
+      ],
+      "correctAnswer": "__call__",
+      "defaultExplanation": "__call__ hace callable.",
+      "hint": "Callable.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_38",
+      "difficulty": "advanced",
+      "type": "fillInTheBlank",
+      "question": "Serializar a bytes: import ___",
+      "options": [
+        "json",
+        "pickle",
+        "byteify",
+        "serialize"
+      ],
+      "correctAnswer": "pickle",
+      "defaultExplanation": "Pickle serializa.",
+      "hint": "Serializar.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_39",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Error: @contextmanager sin yield unico",
+      "options": [
+        "Falta return",
+        "Un yield",
+        "Clase",
+        "No error"
+      ],
+      "correctAnswer": "Un yield",
+      "defaultExplanation": "Requiere yield unico.",
+      "hint": "Yield unico.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_40",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Estructura para Grafo?",
+      "options": [
+        "lista listas",
+        "dict adyacencia",
+        "string",
+        "tupla"
+      ],
+      "correctAnswer": "dict adyacencia",
+      "defaultExplanation": "Dict nodos-vecinos.",
+      "hint": "Adyacencia.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_41",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Diferencia copy vs deepcopy?",
+      "options": [
+        "Igual",
+        "deepcopy recursivo",
+        "Tipos",
+        "Rapido"
+      ],
+      "correctAnswer": "deepcopy recursivo",
+      "defaultExplanation": "Copia independiente.",
+      "hint": "Profunda.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_42",
+      "difficulty": "advanced",
+      "type": "fillInTheBlank",
+      "question": "Type hint retorno: def f(x: int) ___ str",
+      "options": [
+        ":",
+        "->",
+        "=>",
+        "returns"
+      ],
+      "correctAnswer": "->",
+      "defaultExplanation": "-> indica retorno.",
+      "hint": "Hint.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_43",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Error: print(obj.__valor)",
+      "options": [
+        "AttributeError",
+        "Imprime",
+        "Falta @",
+        "No __ en init"
+      ],
+      "correctAnswer": "AttributeError",
+      "defaultExplanation": "Name Mangling.",
+      "hint": "Mangling.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_44",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Estructura heapq?",
+      "options": [
+        "Stack",
+        "Min-Heap",
+        "B-Tree",
+        "List"
+      ],
+      "correctAnswer": "Min-Heap",
+      "defaultExplanation": "Monticulo minimo.",
+      "hint": "Minimo.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_45",
+      "difficulty": "advanced",
+      "type": "fillInTheBlank",
+      "question": "Forzar GC: gc.___()",
+      "options": [
+        "delete",
+        "collect",
+        "free",
+        "clear"
+      ],
+      "correctAnswer": "collect",
+      "defaultExplanation": "collect fuerza GC.",
+      "hint": "GC.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_46",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Riesgo: eval(input())",
+      "options": [
+        "No riesgo",
+        "Inyeccion codigo",
+        "Solo nums",
+        "Lento"
+      ],
+      "correctAnswer": "Inyeccion codigo",
+      "defaultExplanation": "Ejecuta arbitrario.",
+      "hint": "Seguridad.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_47",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Metodo para operador <?",
+      "options": [
+        "__less__",
+        "__lt__",
+        "__gt__",
+        "__le__"
+      ],
+      "correctAnswer": "__lt__",
+      "defaultExplanation": "less than.",
+      "hint": "Less than.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_48",
+      "difficulty": "advanced",
+      "type": "fillInTheBlank",
+      "question": "Una instancia: ___",
+      "options": [
+        "Factory",
+        "Observer",
+        "Singleton",
+        "Adapter"
+      ],
+      "correctAnswer": "Singleton",
+      "defaultExplanation": "Unica instancia.",
+      "hint": "Unico.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_49",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Error: signal.SIGKILL handler",
+      "options": [
+        "Faltan args",
+        "No capturado",
+        "No print",
+        "No error"
+      ],
+      "correctAnswer": "No capturado",
+      "defaultExplanation": "SIGKILL no capturables.",
+      "hint": "Fatal.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_50",
+      "difficulty": "advanced",
+      "type": "multipleChoice",
+      "question": "Obtener atributo por string?",
+      "options": [
+        "get()",
+        "getattr()",
+        "fetch()",
+        "val()"
+      ],
+      "correctAnswer": "getattr()",
+      "defaultExplanation": "Acceso dinamico.",
+      "hint": "Dinamico.",
+      "coinReward": 10
+    },
+    {
+      "id": "a_coding_1",
+      "difficulty": "advanced",
+      "type": "coding",
+      "question": "COMPLETA: Crea una clase con método __init__",
+      "codeSnippet": "class Persona:\n    def __init__(self, nombre):\n        self.nombre = nombre",
+      "correctAnswer": "def __init__(self, nombre):\n        self.nombre = nombre",
+      "expectedOutput": "Persona('Ana').nombre → 'Ana'",
+      "defaultExplanation": "__init__ es el constructor que inicializa los atributos de la clase.",
+      "hint": "Usa: def __init__(self, nombre)",
+      "coinReward": 10
+    },
+    {
+      "id": "a_coding_2",
+      "difficulty": "advanced",
+      "type": "coding",
+      "question": "COMPLETA: Crea un decorador básico",
+      "codeSnippet": "def mi_decorador(func):\n    def wrapper():\n        print('Antes')\n        func()\n        print('Después')\n    return wrapper",
+      "correctAnswer": "def wrapper():\n        print('Antes')\n        func()\n        print('Después')\n    return wrapper",
+      "expectedOutput": "Función decorada",
+      "defaultExplanation": "Un decorador envuelve una función para añadir funcionalidad extra.",
+      "hint": "Define wrapper dentro del decorador",
+      "coinReward": 10
+    },
+    {
+      "id": "a_coding_3",
+      "difficulty": "advanced",
+      "type": "coding",
+      "question": "COMPLETA: Implementa un generador con yield",
+      "codeSnippet": "def numeros():\n    yield 1\n    yield 2\n    yield 3",
+      "correctAnswer": "yield 1\n    yield 2\n    yield 3",
+      "expectedOutput": "1, 2, 3 (uno por vez)",
+      "defaultExplanation": "yield pausa la función y devuelve un valor, manteniendo el estado.",
+      "hint": "Usa yield en lugar de return",
+      "coinReward": 10
+    },
+    {
+      "id": "a_coding_4",
+      "difficulty": "advanced",
+      "type": "coding",
+      "question": "COMPLETA: Manejo de excepciones con try/except",
+      "codeSnippet": "try:\n    resultado = 10 / 0\nexcept ZeroDivisionError:\n    print('Error: división por cero')",
+      "correctAnswer": "except ZeroDivisionError:\n    print('Error: división por cero')",
+      "expectedOutput": "Error: división por cero",
+      "defaultExplanation": "try/except captura y maneja errores específicos.",
+      "hint": "Captura ZeroDivisionError",
+      "coinReward": 10
+    },
+    {
+      "id": "a_coding_5",
+      "difficulty": "advanced",
+      "type": "coding",
+      "question": "COMPLETA: Context manager con 'with'",
+      "codeSnippet": "with open('archivo.txt', 'r') as f:\n    contenido = f.read()",
+      "correctAnswer": "with open('archivo.txt', 'r') as f:\n    contenido = f.read()",
+      "expectedOutput": "Contenido del archivo",
+      "defaultExplanation": "'with' maneja automáticamente la apertura y cierre de recursos.",
+      "hint": "Usa: with open(...) as f",
+      "coinReward": 10
+    },
+    {
+      "id": "a_coding_6",
+      "difficulty": "advanced",
+      "type": "coding",
+      "question": "COMPLETA: Herencia de clases",
+      "codeSnippet": "class Animal:\n    def hablar(self):\n        pass\n\nclass Perro(Animal):\n    def hablar(self):\n        return 'Guau'",
+      "correctAnswer": "class Perro(Animal):\n    def hablar(self):\n        return 'Guau'",
+      "expectedOutput": "Perro().hablar() → 'Guau'",
+      "defaultExplanation": "La herencia permite crear clases basadas en otras clases.",
+      "hint": "class Perro(Animal)",
+      "coinReward": 10
+    },
+    {
+      "id": "a_coding_7",
+      "difficulty": "advanced",
+      "type": "coding",
+      "question": "COMPLETA: Usa super() para llamar al padre",
+      "codeSnippet": "class Padre:\n    def saludo(self):\n        return 'Hola'\n\nclass Hijo(Padre):\n    def saludo(self):\n        return super().saluto()",
+      "correctAnswer": "return super().saludo()",
+      "expectedOutput": "Hijo().saludo() → 'Hola'",
+      "defaultExplanation": "super() permite acceder a métodos de la clase padre.",
+      "hint": "Usa: super().metodo()",
+      "coinReward": 10
+    },
+    {
+      "id": "a_coding_8",
+      "difficulty": "advanced",
+      "type": "coding",
+      "question": "COMPLETA: Propiedad con @property",
+      "codeSnippet": "class Circulo:\n    def __init__(self, radio):\n        self._radio = radio\n    \n    @property\n    def area(self):\n        return 3.14 * self._radio ** 2",
+      "correctAnswer": "@property\n    def area(self):\n        return 3.14 * self._radio ** 2",
+      "expectedOutput": "Circulo(5).area → 78.5",
+      "defaultExplanation": "@property permite acceder a métodos como atributos.",
+      "hint": "Usa el decorador @property",
+      "coinReward": 10
+    },
+    {
+      "id": "a_coding_9",
+      "difficulty": "advanced",
+      "type": "coding",
+      "question": "COMPLETA: Método estático con @staticmethod",
+      "codeSnippet": "class Matematica:\n    @staticmethod\n    def sumar(a, b):\n        return a + b",
+      "correctAnswer": "@staticmethod\n    def sumar(a, b):\n        return a + b",
+      "expectedOutput": "Matematica.sumar(2, 3) → 5",
+      "defaultExplanation": "@staticmethod define métodos que no necesitan self ni cls.",
+      "hint": "Usa @staticmethod",
+      "coinReward": 10
+    },
+    {
+      "id": "a_coding_10",
+      "difficulty": "advanced",
+      "type": "coding",
+      "question": "COMPLETA: Clase abstracta con ABC",
+      "codeSnippet": "from abc import ABC, abstractmethod\n\nclass Animal(ABC):\n    @abstractmethod\n    def hablar(self):\n        pass",
+      "correctAnswer": "@abstractmethod\n    def hablar(self):\n        pass",
+      "expectedOutput": "Clase base para animales",
+      "defaultExplanation": "Las clases abstractas definen métodos que las subclases deben implementar.",
+      "hint": "Usa @abstractmethod",
+      "coinReward": 10
+    },
+    {
+      "id": "reto_adv_1",
+      "difficulty": "advanced",
+      "type": "coding",
+      "question": "RETO: Crea un decorador que mida el tiempo de ejecución",
+      "codeSnippet": "import time\ndef medir_tiempo(func):\n    # Completa aquí\n    pass",
+      "correctAnswer": "import time\ndef medir_tiempo(func):\n    def wrapper(*args, **kwargs):\n        inicio = time.time()\n        resultado = func(*args, **kwargs)\n        fin = time.time()\n        print(f'Tiempo: {fin-inicio:.4f}s')\n        return resultado\n    return wrapper",
+      "expectedOutput": "@medir_tiempo\ndef prueba(): time.sleep(0.1)\nprueba() → Tiempo: 0.1000s",
+      "defaultExplanation": "Un decorador envuelve la función original añadiendo funcionalidad extra.",
+      "hint": "Wrapper con time.time() antes y después",
+      "coinReward": 10,
+      "isChallenge": true
+    },
+    {
+      "id": "reto_adv_2",
+      "difficulty": "advanced",
+      "type": "coding",
+      "question": "RETO: Implementa una pila (Stack) con operaciones push, pop y get_min",
+      "codeSnippet": "class PilaConMinimo:\n    def __init__(self):\n        self.pila = []\n        self.minimos = []\n    \n    def push(self, x):\n        # Completa aquí\n        pass\n    \n    def pop(self):\n        # Completa aquí\n        pass\n    \n    def get_min(self):\n        # Completa aquí\n        pass",
+      "correctAnswer": "class PilaConMinimo:\n    def __init__(self):\n        self.pila = []\n        self.minimos = []\n    \n    def push(self, x):\n        self.pila.append(x)\n        if not self.minimos or x <= self.minimos[-1]:\n            self.minimos.append(x)\n    \n    def pop(self):\n        if self.pila:\n            x = self.pila.pop()\n            if x == self.minimos[-1]:\n                self.minimos.pop()\n    \n    def get_min(self):\n        return self.minimos[-1] if self.minimos else None",
+      "expectedOutput": "O(1) para get_min()",
+      "defaultExplanation": "Usa una pila auxiliar para trackear los mínimos en O(1).",
+      "hint": "Dos pilas: una para valores, otra para mínimos",
+      "coinReward": 10,
+      "isChallenge": true
+    },
+    {
+      "id": "reto_adv_3",
+      "difficulty": "advanced",
+      "type": "coding",
+      "question": "RETO: Implementa BFS (Búsqueda en Anchura) para un grafo",
+      "codeSnippet": "from collections import deque\ndef bfs(grafo, inicio):\n    # Completa aquí\n    pass",
+      "correctAnswer": "from collections import deque\ndef bfs(grafo, inicio):\n    visitados = set()\n    cola = deque([inicio])\n    visitados.add(inicio)\n    resultado = []\n    while cola:\n        nodo = cola.popleft()\n        resultado.append(nodo)\n        for vecino in grafo[nodo]:\n            if vecino not in visitados:\n                cola.append(vecino)\n                visitados.add(vecino)\n    return resultado",
+      "expectedOutput": "bfs({0:[1,2], 1:[2], 2:[0]}, 0) → [0, 1, 2]",
+      "defaultExplanation": "BFS usa una cola para explorar nivel por nivel.",
+      "hint": "Cola + set de visitados",
+      "coinReward": 10,
+      "isChallenge": true
+    },
+    {
+      "id": "reto_adv_4",
+      "difficulty": "advanced",
+      "type": "coding",
+      "question": "RETO: Crea un generador que produzca la secuencia de Fibonacci",
+      "codeSnippet": "def fibonacci(n):\n    # Completa aquí\n    pass",
+      "correctAnswer": "def fibonacci(n):\n    a, b = 0, 1\n    for _ in range(n):\n        yield a\n        a, b = b, a + b",
+      "expectedOutput": "list(fibonacci(7)) → [0, 1, 1, 2, 3, 5, 8]",
+      "defaultExplanation": "yield produce valores uno a uno, manteniendo el estado.",
+      "hint": "Usa yield y actualización simultánea a, b = b, a+b",
+      "coinReward": 10,
+      "isChallenge": true
+    },
+    {
+      "id": "reto_adv_5",
+      "difficulty": "advanced",
+      "type": "coding",
+      "question": "RETO: Implementa QuickSort",
+      "codeSnippet": "def quicksort(lista):\n    # Completa aquí\n    pass",
+      "correctAnswer": "def quicksort(lista):\n    if len(lista) <= 1:\n        return lista\n    pivot = lista[len(lista)//2]\n    left = [x for x in lista if x < pivot]\n    middle = [x for x in lista if x == pivot]\n    right = [x for x in lista if x > pivot]\n    return quicksort(left) + middle + quicksort(right)",
+      "expectedOutput": "quicksort([3,1,4,1,5,9]) → [1,1,3,4,5,9]",
+      "defaultExplanation": "QuickSort usa divide y vencerás. Elige un pivote y particiona la lista.",
+      "hint": "Elige pivote, particiona, recursividad",
+      "coinReward": 10,
+      "isChallenge": true
+    }
+  ],
+  "expert": [
+    {
+      "id": "gg_1",
+      "difficulty": "expert",
+      "type": "coding",
+      "question": "RETO FINAL GG: Implementa una funcion que verifique si un numero es primo",
+      "codeSnippet": "def es_primo(n):\n    # Tu codigo aqui\n    pass",
+      "correctAnswer": "def es_primo(n):\n    if n < 2: return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0: return False\n    return True",
+      "expectedOutput": "es_primo(7) -> True, es_primo(10) -> False",
+      "defaultExplanation": "Un numero primo solo es divisible por 1 y si mismo. Optimizamos revisando hasta la raiz cuadrada.",
+      "hint": "Revisa divisibilidad hasta sqrt(n).",
+      "coinReward": 10
+    },
+    {
+      "id": "gg_2",
+      "difficulty": "expert",
+      "type": "coding",
+      "question": "RETO FINAL GG: Implementa QuickSort",
+      "codeSnippet": "def quicksort(lista):\n    # Tu codigo aqui\n    pass",
+      "correctAnswer": "def quicksort(lista):\n    if len(lista) <= 1: return lista\n    pivot = lista[len(lista)//2]\n    left = [x for x in lista if x < pivot]\n    middle = [x for x in lista if x == pivot]\n    right = [x for x in lista if x > pivot]\n    return quicksort(left) + middle + quicksort(right)",
+      "expectedOutput": "quicksort([3,1,4,1,5,9]) -> [1,1,3,4,5,9]",
+      "defaultExplanation": "QuickSort usa divide y venceras. Elige un pivote y particiona la lista.",
+      "hint": "Elige pivote, particiona, recursividad.",
+      "coinReward": 10
+    },
+    {
+      "id": "gg_3",
+      "difficulty": "expert",
+      "type": "coding",
+      "question": "RETO FINAL GG: Crea un decorador que mida el tiempo de ejecucion",
+      "codeSnippet": "import time\ndef medir_tiempo(func):\n    # Tu codigo aqui\n    pass",
+      "correctAnswer": "import time\ndef medir_tiempo(func):\n    def wrapper(*args, **kwargs):\n        inicio = time.time()\n        resultado = func(*args, **kwargs)\n        fin = time.time()\n        print(f'Tiempo: {fin-inicio:.4f}s')\n        return resultado\n    return wrapper",
+      "expectedOutput": "@medir_tiempo\\ndef prueba(): time.sleep(1)\\nprueba() -> Tiempo: 1.0000s",
+      "defaultExplanation": "Un decorador envuelve la funcion original anadiendo funcionalidad extra.",
+      "hint": "Wrapper con time.time() antes y despues.",
+      "coinReward": 10
+    },
+    {
+      "id": "gg_4",
+      "difficulty": "expert",
+      "type": "coding",
+      "question": "RETO FINAL GG: Implementa una pila (Stack) con operaciones push, pop y get_min",
+      "codeSnippet": "class PilaConMinimo:\n    def __init__(self):\n        pass\n    def push(self, x):\n        pass\n    def pop(self):\n        pass\n    def get_min(self):\n        pass",
+      "correctAnswer": "class PilaConMinimo:\n    def __init__(self):\n        self.pila = []\n        self.minimos = []\n    def push(self, x):\n        self.pila.append(x)\n        if not self.minimos or x <= self.minimos[-1]:\n            self.minimos.append(x)\n    def pop(self):\n        if self.pila:\n            x = self.pila.pop()\n            if x == self.minimos[-1]:\n                self.minimos.pop()\n    def get_min(self):\n        return self.minimos[-1] if self.minimos else None",
+      "expectedOutput": "O(1) para get_min()",
+      "defaultExplanation": "Usa una pila auxiliar para trackear los minimos en O(1).",
+      "hint": "Dos pilas: una para valores, otra para minimos.",
+      "coinReward": 10
+    },
+    {
+      "id": "gg_5",
+      "difficulty": "expert",
+      "type": "coding",
+      "question": "RETO FINAL GG: Implementa BFS (Busqueda en Anchura) para un grafo",
+      "codeSnippet": "from collections import deque\ndef bfs(grafo, inicio):\n    # Tu codigo aqui\n    pass",
+      "correctAnswer": "from collections import deque\ndef bfs(grafo, inicio):\n    visitados = set()\n    cola = deque([inicio])\n    visitados.add(inicio)\n    resultado = []\n    while cola:\n        nodo = cola.popleft()\n        resultado.append(nodo)\n        for vecino in grafo[nodo]:\n            if vecino not in visitados:\n                cola.append(vecino)\n                visitados.add(vecino)\n    return resultado",
+      "expectedOutput": "bfs({0:[1,2], 1:[2], 2:[0]}, 0) -> [0, 1, 2]",
+      "defaultExplanation": "BFS usa una cola para explorar nivel por nivel.",
+      "hint": "Cola + set de visitados.",
+      "coinReward": 10
+    },
+    {
+      "id": "gg_6",
+      "difficulty": "expert",
+      "type": "coding",
+      "question": "RETO FINAL GG: Implementa una función recursiva para calcular el factorial",
+      "codeSnippet": "def factorial(n):\n    # Tu código aquí\n    pass",
+      "correctAnswer": "def factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n - 1)",
+      "expectedOutput": "factorial(5) → 120",
+      "defaultExplanation": "El factorial de n es n! = n × (n-1) × ... × 1. El caso base es factorial(1) = 1.",
+      "hint": "Caso base: n <= 1. Recursivo: n * factorial(n-1)",
+      "coinReward": 10
+    },
+    {
+      "id": "gg_7",
+      "difficulty": "expert",
+      "type": "coding",
+      "question": "RETO FINAL GG: Implementa DFS (Búsqueda en Profundidad) para un grafo",
+      "codeSnippet": "def dfs(grafo, inicio, visitados=None):\n    # Tu código aquí\n    pass",
+      "correctAnswer": "def dfs(grafo, inicio, visitados=None):\n    if visitados is None:\n        visitados = set()\n    visitados.add(inicio)\n    for vecino in grafo[inicio]:\n        if vecino not in visitados:\n            dfs(grafo, vecino, visitados)\n    return visitados",
+      "expectedOutput": "dfs({0:[1,2], 1:[2], 2:[0]}, 0) → {0, 1, 2}",
+      "defaultExplanation": "DFS explora tan lejos como sea posible antes de retroceder (backtracking).",
+      "hint": "Usa un set para visitados y recursión",
+      "coinReward": 10
+    },
+    {
+      "id": "gg_8",
+      "difficulty": "expert",
+      "type": "coding",
+      "question": "RETO FINAL GG: Implementa Merge Sort",
+      "codeSnippet": "def merge_sort(lista):\n    # Tu código aquí\n    pass",
+      "correctAnswer": "def merge_sort(lista):\n    if len(lista) <= 1:\n        return lista\n    medio = len(lista) // 2\n    izquierda = merge_sort(lista[:medio])\n    derecha = merge_sort(lista[medio:])\n    return merge(izquierda, derecha)\n\ndef merge(izq, der):\n    resultado = []\n    i = j = 0\n    while i < len(izq) and j < len(der):\n        if izq[i] <= der[j]:\n            resultado.append(izq[i])\n            i += 1\n        else:\n            resultado.append(der[j])\n            j += 1\n    resultado.extend(izq[i:])\n    resultado.extend(der[j:])\n    return resultado",
+      "expectedOutput": "merge_sort([3,1,4,1,5,9]) → [1,1,3,4,5,9]",
+      "defaultExplanation": "Merge Sort usa divide y vencerás: divide la lista y luego combina ordenado.",
+      "hint": "Divide en mitades, ordena recursivamente, combina",
+      "coinReward": 10
+    },
+    {
+      "id": "gg_9",
+      "difficulty": "expert",
+      "type": "coding",
+      "question": "RETO FINAL GG: Crea un contexto manager con __enter__ y __exit__",
+      "codeSnippet": "class MiContexto:\n    def __enter__(self):\n        # Tu código aquí\n        pass\n    \n    def __exit__(self, exc_type, exc_val, exc_tb):\n        # Tu código aquí\n        pass",
+      "correctAnswer": "class MiContexto:\n    def __enter__(self):\n        print('Entrando al contexto')\n        return self\n    \n    def __exit__(self, exc_type, exc_val, exc_tb):\n        print('Saliendo del contexto')\n        return False",
+      "expectedOutput": "Con 'with': entra y sale automáticamente",
+      "defaultExplanation": "__enter__ se ejecuta al entrar, __exit__ al salir (incluso con errores).",
+      "hint": "__enter__ retorna self, __exit__ maneja cleanup",
+      "coinReward": 10
+    },
+    {
+      "id": "gg_10",
+      "difficulty": "expert",
+      "type": "coding",
+      "question": "RETO FINAL GG: Implementa una cola (Queue) con dos pilas (Stacks)",
+      "codeSnippet": "class ColaConPilas:\n    def __init__(self):\n        self.pila1 = []\n        self.pila2 = []\n    \n    def enqueue(self, x):\n        # Tu código aquí\n        pass\n    \n    def dequeue(self):\n        # Tu código aquí\n        pass",
+      "correctAnswer": "class ColaConPilas:\n    def __init__(self):\n        self.pila1 = []\n        self.pila2 = []\n    \n    def enqueue(self, x):\n        self.pila1.append(x)\n    \n    def dequeue(self):\n        if not self.pila2:\n            while self.pila1:\n                self.pila2.append(self.pila1.pop())\n        return self.pila2.pop() if self.pila2 else None",
+      "expectedOutput": "enqueue(1), enqueue(2), dequeue() → 1",
+      "defaultExplanation": "Usa una pila para entrada y otra para salida, invirtiendo el orden.",
+      "hint": "pila1 para push, pila2 para pop (invierte)",
+      "coinReward": 10
+    }
+  ]
+}

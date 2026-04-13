@@ -1,0 +1,103 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+
+# Archivos de herramientas de Dart y Flutter (Caché y temporales)
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+
+# Archivos de configuración de IDEs (VS Code, Android Studio)
+.idea/
+.vscode/
+*.iml
+*.swp
+*.lock
+
+# Archivos específicos de plataformas (logs y archivos generados)
+/android/sdk.dir
+/ios/.generated/
+/windows/flutter/ephemeral/
+/linux/flutter/ephemeral/
+ios/Flutter/ephemeral/
+android/key.properties
+
+# Archivos de sistema y logs
+erl_crash.dump
+*.log
+.DS_Store
+
+
+# --- Agregados para Python Quizz Flash ---
+
+# Archivos temporales de Chrome (los que causaron el error de tokens)
+.dart_tool/chrome-device/
+/python_quizz_flash/.dart_tool/
+
+# Secretos y Variables de Entorno (si llegas a usar Firebase o APIs)
+.env
+*.secret
+
+# Configuración Web con credenciales
+web/config.js
+!web/config.js.example
+
+# Archivos de respaldo de editores Linux (como el que usas en tu Lenovo)
+*~
+*.save
+*.bak
+
+# Si usas herramientas de Python para generar las preguntas del Quiz
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos generados por Riverpod Generator
+*.g.dart

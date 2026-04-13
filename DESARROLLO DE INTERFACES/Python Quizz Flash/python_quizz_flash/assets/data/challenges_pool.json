@@ -1,0 +1,143 @@
+{
+  "basic": [
+    {
+      "id": "reto_basic_1",
+      "title": "DOBLE DE NÚMERO",
+      "description": "El sistema debe calcular el doble de un número, pero la función está incompleta.",
+      "initialCode": "def doble(n):\n    # Completa aquí\n    pass",
+      "solutionPattern": "return n * 2",
+      "specificHint": "La función debe retornar el valor multiplicado por 2.",
+      "fullSolution": "def doble(n):\n    return n * 2\n\nprint(doble(5))"
+    },
+    {
+      "id": "reto_basic_2",
+      "title": "CONTADOR DE VOCALES",
+      "description": "Cuenta cuántas vocales hay en un texto dado.",
+      "initialCode": "def contar_vocales(texto):\n    # Completa aquí\n    pass",
+      "solutionPattern": "return sum(1 for c in texto if c in vocales)",
+      "specificHint": "Itera sobre cada carácter y cuenta si está en las vocales.",
+      "fullSolution": "def contar_vocales(texto):\n    vocales = 'aeiouAEIOU'\n    return sum(1 for c in texto if c in vocales)\n\nprint(contar_vocales('hola'))"
+    },
+    {
+      "id": "reto_basic_3",
+      "title": "INVERTIR LISTA",
+      "description": "Invierte una lista sin usar la función reverse().",
+      "initialCode": "def invertir(lista):\n    # Completa aquí\n    pass",
+      "solutionPattern": "return lista[::-1]",
+      "specificHint": "El slicing [::-1] invierte la lista.",
+      "fullSolution": "def invertir(lista):\n    return lista[::-1]\n\nprint(invertir([1,2,3]))"
+    },
+    {
+      "id": "reto_basic_4",
+      "title": "NÚMERO PAR",
+      "description": "Verifica si un número es par retornando True o False.",
+      "initialCode": "def es_par(n):\n    # Completa aquí\n    pass",
+      "solutionPattern": "return n % 2 == 0",
+      "specificHint": "Un número es par si el residuo de dividir por 2 es 0.",
+      "fullSolution": "def es_par(n):\n    return n % 2 == 0\n\nprint(es_par(4))"
+    },
+    {
+      "id": "reto_basic_5",
+      "title": "SUMA DE LISTA",
+      "description": "Suma todos los elementos de una lista.",
+      "initialCode": "def sumar_lista(lista):\n    # Completa aquí\n    pass",
+      "solutionPattern": "return sum(lista)",
+      "specificHint": "La función sum() suma todos los elementos de un iterable.",
+      "fullSolution": "def sumar_lista(lista):\n    return sum(lista)\n\nprint(sumar_lista([1,2,3,4]))"
+    }
+  ],
+  "intermediate": [
+    {
+      "id": "reto_int_1",
+      "title": "CUADRADOS PARES",
+      "description": "Crea una lista con los cuadrados solo de los números pares.",
+      "initialCode": "def cuadrados_pares(n):\n    # Completa aquí\n    pass",
+      "solutionPattern": "return [x**2 for x in range(n) if x % 2 == 0]",
+      "specificHint": "Usa list comprehension con filtro para solo pares.",
+      "fullSolution": "def cuadrados_pares(n):\n    return [x**2 for x in range(n) if x % 2 == 0]\n\nprint(cuadrados_pares(10))"
+    },
+    {
+      "id": "reto_int_2",
+      "title": "MÁS REPETIDO",
+      "description": "Encuentra el elemento más repetido en una lista.",
+      "initialCode": "def mas_repetido(lista):\n    # Completa aquí\n    pass",
+      "solutionPattern": "return max(set(lista), key=lista.count)",
+      "specificHint": "max() con key=count encuentra el elemento que más se repite.",
+      "fullSolution": "def mas_repetido(lista):\n    return max(set(lista), key=lista.count)\n\nprint(mas_repetido([1,2,2,3,2]))"
+    },
+    {
+      "id": "reto_int_3",
+      "title": "CONVERTIR A ENTEROS",
+      "description": "Convierte una lista de strings a enteros.",
+      "initialCode": "def a_enteros(strings):\n    # Completa aquí\n    pass",
+      "solutionPattern": "return list(map(int, strings))",
+      "specificHint": "map() aplica int() a cada elemento del iterable.",
+      "fullSolution": "def a_enteros(strings):\n    return list(map(int, strings))\n\nprint(a_enteros(['1','2','3']))"
+    },
+    {
+      "id": "reto_int_4",
+      "title": "FUSIONAR DICCIONARIOS",
+      "description": "Fusiona dos diccionarios en uno solo.",
+      "initialCode": "def fusionar(d1, d2):\n    # Completa aquí\n    pass",
+      "solutionPattern": "return {**d1, **d2}",
+      "specificHint": "El unpacking ** combina diccionarios.",
+      "fullSolution": "def fusionar(d1, d2):\n    return {**d1, **d2}\n\nprint(fusionar({'a':1}, {'b':2}))"
+    },
+    {
+      "id": "reto_int_5",
+      "title": "FILTRAR MAYÚSCULAS",
+      "description": "Filtra palabras que empiezan con mayúscula.",
+      "initialCode": "def mayusculas(palabras):\n    # Completa aquí\n    pass",
+      "solutionPattern": "return [p for p in palabras if p[0].isupper()]",
+      "specificHint": "isupper() verifica si la primera letra es mayúscula.",
+      "fullSolution": "def mayusculas(palabras):\n    return [p for p in palabras if p[0].isupper()]\n\nprint(mayusculas(['hola', 'Mundo', 'Python']))"
+    }
+  ],
+  "advanced": [
+    {
+      "id": "reto_adv_1",
+      "title": "DECORADOR DE TIEMPO",
+      "description": "Crea un decorador que mida el tiempo de ejecución de una función.",
+      "initialCode": "import time\ndef medir_tiempo(func):\n    # Completa aquí\n    pass",
+      "solutionPattern": "inicio = time.time()",
+      "specificHint": "Un decorador envuelve la función original añadiendo funcionalidad extra.",
+      "fullSolution": "import time\ndef medir_tiempo(func):\n    def wrapper(*args, **kwargs):\n        inicio = time.time()\n        resultado = func(*args, **kwargs)\n        fin = time.time()\n        print(f'Tiempo: {fin-inicio:.4f}s')\n        return resultado\n    return wrapper"
+    },
+    {
+      "id": "reto_adv_2",
+      "title": "PILA CON MÍNIMO",
+      "description": "Implementa una pila (Stack) con operaciones push, pop y get_min en O(1).",
+      "initialCode": "class PilaConMinimo:\n    def __init__(self):\n        self.pila = []\n        self.minimos = []\n    \n    def push(self, x):\n        # Completa aquí\n        pass\n    \n    def pop(self):\n        # Completa aquí\n        pass\n    \n    def get_min(self):\n        # Completa aquí\n        pass",
+      "solutionPattern": "self.minimos.append(x)",
+      "specificHint": "Usa una pila auxiliar para trackear los mínimos en O(1).",
+      "fullSolution": "class PilaConMinimo:\n    def __init__(self):\n        self.pila = []\n        self.minimos = []\n    \n    def push(self, x):\n        self.pila.append(x)\n        if not self.minimos or x <= self.minimos[-1]:\n            self.minimos.append(x)\n    \n    def pop(self):\n        if self.pila:\n            x = self.pila.pop()\n            if x == self.minimos[-1]:\n                self.minimos.pop()\n    \n    def get_min(self):\n        return self.minimos[-1] if self.minimos else None"
+    },
+    {
+      "id": "reto_adv_3",
+      "title": "BFS (BÚSQUEDA EN ANCHURA)",
+      "description": "Implementa BFS (Búsqueda en Anchura) para un grafo.",
+      "initialCode": "from collections import deque\ndef bfs(grafo, inicio):\n    # Completa aquí\n    pass",
+      "solutionPattern": "cola = deque([inicio])",
+      "specificHint": "BFS usa una cola para explorar nivel por nivel.",
+      "fullSolution": "from collections import deque\ndef bfs(grafo, inicio):\n    visitados = set()\n    cola = deque([inicio])\n    visitados.add(inicio)\n    resultado = []\n    while cola:\n        nodo = cola.popleft()\n        resultado.append(nodo)\n        for vecino in grafo[nodo]:\n            if vecino not in visitados:\n                cola.append(vecino)\n                visitados.add(vecino)\n    return resultado"
+    },
+    {
+      "id": "reto_adv_4",
+      "title": "GENERADOR FIBONACCI",
+      "description": "Crea un generador que produzca la secuencia de Fibonacci.",
+      "initialCode": "def fibonacci(n):\n    # Completa aquí\n    pass",
+      "solutionPattern": "yield a",
+      "specificHint": "yield produce valores uno a uno, manteniendo el estado.",
+      "fullSolution": "def fibonacci(n):\n    a, b = 0, 1\n    for _ in range(n):\n        yield a\n        a, b = b, a + b\n\nprint(list(fibonacci(7)))"
+    },
+    {
+      "id": "reto_adv_5",
+      "title": "QUICKSORT",
+      "description": "Implementa el algoritmo QuickSort.",
+      "initialCode": "def quicksort(lista):\n    # Completa aquí\n    pass",
+      "solutionPattern": "pivot = lista[len(lista)//2]",
+      "specificHint": "QuickSort usa divide y vencerás. Elige un pivote y particiona la lista.",
+      "fullSolution": "def quicksort(lista):\n    if len(lista) <= 1:\n        return lista\n    pivot = lista[len(lista)//2]\n    left = [x for x in lista if x < pivot]\n    middle = [x for x in lista if x == pivot]\n    right = [x for x in lista if x > pivot]\n    return quicksort(left) + middle + quicksort(right)"
+    }
+  ]
+}

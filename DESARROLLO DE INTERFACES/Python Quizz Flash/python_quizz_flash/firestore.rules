@@ -1,0 +1,64 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Función auxiliar para verificar autenticación
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // COLECCIÓN: users
+    match /users/{userId} {
+      // LEER: 
+      // - Permite lectura pública para login con username_search (sin autenticar)
+      // - Usuarios autenticados también pueden leer
+      allow read: if true; // Necesario para login con username antes de autenticar
+      
+      // CREAR: Usuario crea su propio documento
+      allow create: if isAuthenticated() && request.auth.uid == userId;
+
+      // ACTUALIZAR: Usuario puede actualizar su propio documento
+      allow update: if isAuthenticated() && request.auth.uid == userId;
+
+      // ELIMINAR: Solo el dueño
+      allow delete: if isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // COLECCIÓN: transactions
+    match /transactions/{transactionId} {
+      allow read: if isAuthenticated() && resource.data.user_id == request.auth.uid;
+      allow create: if isAuthenticated() && request.resource.data.user_id == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    // COLECCIÓN: ai_content (contenido generado por IA)
+    match /ai_content/{contentId} {
+      // Los usuarios pueden leer su propio contenido
+      allow read: if isAuthenticated();
+      // El servicio puede crear contenido (se crea después de la compra)
+      allow create: if isAuthenticated();
+      // Solo el dueño puede actualizar (marcar como visto)
+      allow update: if isAuthenticated() && resource.data.user_id == request.auth.uid;
+      // Nadie puede eliminar contenido de IA
+      allow delete: if false;
+    }
+
+    // COLECCIÓN: ai_usage (registro de uso diario de IA)
+    match /ai_usage/{usageId} {
+      // Los usuarios pueden leer su propio uso
+      allow read: if isAuthenticated();
+      // El servicio puede registrar uso
+      allow create: if isAuthenticated();
+      // El servicio puede actualizar (incrementar contador)
+      allow update: if isAuthenticated();
+      // El usuario puede eliminar sus propios registros (para resetear límites)
+      allow delete: if isAuthenticated();
+    }
+
+    // Regla por defecto: denegar todo lo demás
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
