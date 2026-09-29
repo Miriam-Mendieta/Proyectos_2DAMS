@@ -48,4 +48,7 @@ En pocas palabras, la aplicación resuelve el problema de tener los datos clave 
 
 **Autora:** Miriam Mendieta.-  
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/aa00116b-82be-4a59-9d8b-49728fc7a95b" alt="LogoMiriam" width="100" height="100" />
+</p>
 </div>
