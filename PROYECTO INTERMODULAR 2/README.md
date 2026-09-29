@@ -43,7 +43,7 @@ Los proyectos se trabajan mediante la metodología **SCRUM** y GIT/GitHub para e
 <p align="center">
   <img src="https://github.com/user-attachments/assets/aa00116b-82be-4a59-9d8b-49728fc7a95b" alt="LogoMiriam" width="300" height="300" />
 </p>
-Autora: Miriam Mendieta.-  
+Autora: Miriam Mendieta.- 
 
 
 
