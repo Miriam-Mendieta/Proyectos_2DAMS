@@ -35,5 +35,5 @@ Cada proyecto está pensado para ser reutilizable , con código comentado y docu
 
 ---
 
-**Autora:** Miriam Mendieta  
+**Autora:** Miriam Mendieta.-  
   
