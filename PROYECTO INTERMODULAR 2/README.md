@@ -42,4 +42,4 @@ Los proyectos se articula mediante la metodología **SCRUM** y GIT/GitHub para e
 
 Autora: Miriam Mendieta.-
 ---
->>>>>>> 7eec070 (Añadir Proyecto Intermodular 2)
+
