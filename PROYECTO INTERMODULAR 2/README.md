@@ -1,11 +1,11 @@
-# 📦 Proyecto Intermodular 2 
+# 📝 Proyecto Intermodular 2 
 
 Bienvenido/a al repositorio del módulo Proyecto Intermodular 2 de DAM. 
 El objetivo principal de este módulo es resolver problemas del mundo real mediante el desarrollo de software (app completas, experiencias multimedia o videojuegos)
 
 <br>
 
-## 🖋️ Contenidos del Módulo
+## 📂 Contenidos del Módulo
 
 Durante el curso se desarrollan **3 proyectos** que deberán cubrir funcionalidades CRUD completas (**Añadir, Consultar, Editar y Eliminar datos**) y permitir posibilidades de crecimiento:
 
