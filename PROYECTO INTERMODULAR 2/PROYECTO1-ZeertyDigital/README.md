@@ -24,8 +24,6 @@ En pocas palabras, la aplicación resuelve el problema de tener los datos clave 
 - **Repositorio de marca y contenido:** Reúne en un solo lugar logos, manuales de marca, imágenes y archivos para redes sociales o catálogos.
 - **Custodia legal y operativa:** Organiza contratos, copias de seguridad y bases de datos de clientes garantizando el cumplimiento de normativas como el RGPD.
 
-> **En resumen:** ZeertyDigital funciona como una caja fuerte y asistente operativo que evita pérdidas de dinero por despistes, protege la información sensible del negocio y le permite al autónomo o PYME gestionar sus activos digitales como lo haría una gran empresa.
-
 ---
 
 ## 🛠️ Stack Tecnológico
