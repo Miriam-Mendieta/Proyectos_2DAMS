@@ -14,19 +14,21 @@ Cada proyecto está pensado para ser reutilizable , con código comentado y docu
 
 - [Desarrollo de Interfaces](https://github.com/Miriam-Mendieta/Proyectos_2DAMS/tree/main/DESARROLLO%20DE%20INTERFACES)
 - [Sistema de Gestión Empresarial](https://github.com/Miriam-Mendieta/Proyectos_2DAMS/tree/main/SISTEMA%20DE%20GESTI%C3%93N%20EMPRESARIAL)
-- [Acceso a Datos]()
+- [Proyecto Intermodular 2](https://github.com/Miriam-Mendieta/Proyectos_2DAMS/tree/main/PROYECTO%20INTERMODULAR%202)
 - [Programación Multimedia y Dispositivos Móviles]()
 
 
 ## 🛠️ Tecnologías
 
 - Sql y SQLite 
-- Diseño UI/UX
+- Mysql
 - Figma
 - Python
 - Docker
 - Jupyter Notebook
 - Markdown
+- Java
+- Spring Boot
 
 
  Tags:  #DAMS #CFGS #MULTIPLATAFORMA 
