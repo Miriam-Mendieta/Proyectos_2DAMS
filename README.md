@@ -15,7 +15,7 @@ Cada proyecto está pensado para ser reutilizable , con código comentado y docu
 - [Desarrollo de Interfaces](https://github.com/Miriam-Mendieta/Proyectos_2DAMS/tree/main/DESARROLLO%20DE%20INTERFACES)
 - [Sistema de Gestión Empresarial](https://github.com/Miriam-Mendieta/Proyectos_2DAMS/tree/main/SISTEMA%20DE%20GESTI%C3%93N%20EMPRESARIAL)
 - [Proyecto Intermodular 2](https://github.com/Miriam-Mendieta/Proyecto_Intermodular2)
-- [Programación Multimedia y Dispositivos Móviles]()
+- [Programación Multimedia y Dispositivos Móviles](https://github.com/Miriam-Mendieta/ProgramacionMultimedia-y-DispositivosMoviles)
 
 
 ## 🛠️ Tecnologías
