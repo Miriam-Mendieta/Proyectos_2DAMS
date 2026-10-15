@@ -17,7 +17,7 @@ Durante el curso se desarrollan **3 proyectos** que deberán cubrir funcionalida
 Los proyectos se trabajan mediante la metodología **SCRUM** y GIT/GitHub para el control de versiones.
 
 
-### 🔹 Proyecto 1: [ZeertyDigital](https://github.com/Miriam-Mendieta/Proyectos_2DAMS/tree/main/PROYECTO%20INTERMODULAR%202/PROYECTO1-ZeertyDigital)   <img width="30" height="30" alt="logoRedondoAPP" src="https://github.com/user-attachments/assets/482fa613-d1e1-48d2-bcb9-6e1e8856ff23" />
+### 🔹 Proyecto 1: [ZeertyDigital](https://github.com/Miriam-Mendieta/zeertyDigitalApp) <img width="30" height="30" alt="logoRedondoAPP" src="https://github.com/user-attachments/assets/482fa613-d1e1-48d2-bcb9-6e1e8856ff23" />
 
 ### 🔹 Proyecto 2:[]()
 ### 🔹 Proyecto 3: []()
